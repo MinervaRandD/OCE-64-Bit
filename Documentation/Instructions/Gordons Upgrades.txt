@@ -1,0 +1,5 @@
+1. Add labor per unit of measure. Cost per unit of labor. 1 week
+2. Wood flooring. 1 week.
+3. Carpet directionality. 2 week
+4. Labeling areas defined. 1 week.
+5. Add transoms. 1 week.

@@ -1,0 +1,16 @@
+Nuget Packages:
+entityframeworkcore.tools
+entityframeworkcore.sqlserver
+
+From package manager console:
+Scaffold-DbContext "Server=.\SQLExpress;Database=MarketingSupport;Trusted_Connection=true;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+In program.cs: add
+
+builder.Services.AddDbContext<MarketingSupportContext>(); <= better check name
+
+in program.cs: change top using to 'global'
+
+Create controllers for each.
+
+constructor of controller pass context

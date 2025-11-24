@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16D9F911-0786-4BFA-B363-F9C08BB0DDF6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BaseFormLib</RootNamespace>
+    <AssemblyName>BaseFormLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base Form\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base Form\Debug Mode\ConsistencyChecker.cs" />
+    <Compile Include="Base Form\Debug Mode\DebugForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Debug Mode\DebugForm.Designer.cs">
+      <DependentUpon>DebugForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base Form\Debug Mode\DebugMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Debug Mode\DebugSupportRoutines.cs" />
+    <Compile Include="Base Form\Design States\AreaDesignState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Design States\DesignState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Design States\DesignStateChangeEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Design States\EditAreaMode.cs" />
+    <Compile Include="Base Form\Design States\EditLineMode.cs" />
+    <Compile Include="Base Form\Design States\LineDesignState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Design States\SeamDesignState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Editing Form Events\EditingFormEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\ExceptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\ExceptionForm.Designer.cs">
+      <DependentUpon>ExceptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\AutosaveModelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\AutosaveModelForm.Designer.cs">
+      <DependentUpon>AutosaveModelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\FloorMaterialEstimatorBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\FloorMaterialEstimatorBaseForm.designer.cs">
+      <DependentUpon>FloorMaterialEstimatorBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\FloorMaterialEstimatorBaseFormEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\FloorMaterialEstimatorKeyEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\FloorMaterialEstimatorToolStripEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\MSStencilHelper.cs" />
+    <Compile Include="Base Form\Keyboard and Mouse Actions\KeyboardAndMouseActionsForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Keyboard and Mouse Actions\KeyboardAndMouseActionsForms.Designer.cs">
+      <DependentUpon>KeyboardAndMouseActionsForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base Form\Keyboard and Mouse Actions\UCKeyboardAndMouseActionsElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base Form\Keyboard and Mouse Actions\UCKeyboardAndMouseActionsElement.Designer.cs">
+      <DependentUpon>UCKeyboardAndMouseActionsElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Base Form\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base Form\Debug Mode\DebugForm.resx">
+      <DependentUpon>DebugForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base Form\ExceptionForm.resx">
+      <DependentUpon>ExceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base Form\Floor Materials Base Form\AutosaveModelForm.resx">
+      <DependentUpon>AutosaveModelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base Form\Floor Materials Base Form\FloorMaterialEstimatorBaseForm.resx">
+      <DependentUpon>FloorMaterialEstimatorBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base Form\Keyboard and Mouse Actions\KeyboardAndMouseActionsForms.resx">
+      <DependentUpon>KeyboardAndMouseActionsForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base Form\Keyboard and Mouse Actions\UCKeyboardAndMouseActionsElement.resx">
+      <DependentUpon>UCKeyboardAndMouseActionsElement.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Graphics\Graphics.csproj">
+      <Project>{3aaf1aca-1e72-4bb3-a276-b9609039d71d}</Project>
+      <Name>Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{0d4ef8be-d883-44c7-bf1b-7ad6bce7e890}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

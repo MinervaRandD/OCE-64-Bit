@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfSeamFinishBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SeamFinishBase>
+    <Guid>36413de4-2975-473f-bc12-2fde5079d11b</Guid>
+    <SeamName>Seam-1</SeamName>
+    <Product />
+    <Notes />
+    <Filtered>false</Filtered>
+    <LengthInInches>0</LengthInInches>
+    <VisioDashType>2</VisioDashType>
+    <SeamWidthInPts>2</SeamWidthInPts>
+    <A>255</A>
+    <R>255</R>
+    <G>0</G>
+    <B>0</B>
+  </SeamFinishBase>
+  <SeamFinishBase>
+    <Guid>ce67e72b-8bbe-420d-9e58-e22c74fc5cd7</Guid>
+    <SeamName>Seam-2</SeamName>
+    <Product />
+    <Notes />
+    <Filtered>false</Filtered>
+    <LengthInInches>0</LengthInInches>
+    <VisioDashType>2</VisioDashType>
+    <SeamWidthInPts>2</SeamWidthInPts>
+    <A>255</A>
+    <R>0</R>
+    <G>0</G>
+    <B>255</B>
+  </SeamFinishBase>
+  <SeamFinishBase>
+    <Guid>94eefbd1-bbda-4876-ba9c-6d0adad91208</Guid>
+    <SeamName>Seam-3</SeamName>
+    <Product />
+    <Notes />
+    <Filtered>false</Filtered>
+    <LengthInInches>0</LengthInInches>
+    <VisioDashType>2</VisioDashType>
+    <SeamWidthInPts>2</SeamWidthInPts>
+    <A>255</A>
+    <R>134</R>
+    <G>134</G>
+    <B>134</B>
+  </SeamFinishBase>
+  <SeamFinishBase>
+    <Guid>dd823b04-b1b4-464f-8437-a65265bbd236</Guid>
+    <SeamName>Seam-4</SeamName>
+    <Product />
+    <Notes />
+    <Filtered>false</Filtered>
+    <LengthInInches>0</LengthInInches>
+    <VisioDashType>10</VisioDashType>
+    <SeamWidthInPts>3</SeamWidthInPts>
+    <A>255</A>
+    <R>255</R>
+    <G>0</G>
+    <B>0</B>
+  </SeamFinishBase>
+  <SeamFinishBase>
+    <Guid>838fb60f-9c27-43fe-ad4f-2f58a2a2975c</Guid>
+    <SeamName>Seam-5</SeamName>
+    <Product />
+    <Notes />
+    <Filtered>false</Filtered>
+    <LengthInInches>0</LengthInInches>
+    <VisioDashType>10</VisioDashType>
+    <SeamWidthInPts>3</SeamWidthInPts>
+    <A>255</A>
+    <R>0</R>
+    <G>0</G>
+    <B>255</B>
+  </SeamFinishBase>
+  <SeamFinishBase>
+    <Guid>c9e7767d-4141-49e6-8b22-8d25f0af095d</Guid>
+    <SeamName>Seam-6</SeamName>
+    <Product />
+    <Notes />
+    <Filtered>false</Filtered>
+    <LengthInInches>0</LengthInInches>
+    <VisioDashType>10</VisioDashType>
+    <SeamWidthInPts>3</SeamWidthInPts>
+    <A>255</A>
+    <R>0</R>
+    <G>0</G>
+    <B>0</B>
+  </SeamFinishBase>
+</ArrayOfSeamFinishBase>

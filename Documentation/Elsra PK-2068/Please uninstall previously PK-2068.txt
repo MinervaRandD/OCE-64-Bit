@@ -1,0 +1,3 @@
+Important!
+
+Please uninstall previously PK-2068 if programming software of PK-2068 already installed in your PC or NB before.

@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB086504-FA9C-404F-9C24-5B73D9A224B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CanvasLib</RootNamespace>
+    <AssemblyName>CanvasLib</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Visio, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\References\Microsoft.Office.Interop.Visio.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=25.1462.35.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Area and Seam Views\UCAreasView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Area and Seam Views\UCAreasView.Designer.cs">
+      <DependentUpon>UCAreasView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Area and Seam Views\UCRemnantsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Area and Seam Views\UCRemnantsView.Designer.cs">
+      <DependentUpon>UCRemnantsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Area and Seam Views\UCRemnantViewElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Area and Seam Views\UCRemnantViewElement.Designer.cs">
+      <DependentUpon>UCRemnantViewElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Area and Seam Views\UCSeamsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Area and Seam Views\UCSeamsView.Designer.cs">
+      <DependentUpon>UCSeamsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borders\BorderGenerationMarker.cs" />
+    <Compile Include="Borders\BorderGenerationState.cs" />
+    <Compile Include="Borders\BorderGuideBoundary.cs" />
+    <Compile Include="Borders\BorderManager.cs" />
+    <Compile Include="Canvas Shapes\CanvasLineType.cs" />
+    <Compile Include="Counters\Counter.cs" />
+    <Compile Include="Counters\CounterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Counters\CounterControl.Designer.cs">
+      <DependentUpon>CounterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Counters\CounterList.cs" />
+    <Compile Include="Counters\CounterRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Counters\CounterRow.Designer.cs">
+      <DependentUpon>CounterRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Counters\CounterRowHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Counters\CounterRowHeader.Designer.cs">
+      <DependentUpon>CounterRowHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Counters\CountersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Counters\CountersForm.Designer.cs">
+      <DependentUpon>CountersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Counters\CounterController.cs" />
+    <Compile Include="Counters\GraphicsCounter.cs" />
+    <Compile Include="Door Takeouts\DoorTakeouts.cs" />
+    <Compile Include="Filters\Area Filter\AreaFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filters\Area Filter\AreaFilterForm.Designer.cs">
+      <DependentUpon>AreaFilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\Area Filter\AreaFilterRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Filters\Area Filter\AreaFilterRow.Designer.cs">
+      <DependentUpon>AreaFilterRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\Area Filter\AreaFilterTitleRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Filters\Area Filter\AreaFilterTitleRow.Designer.cs">
+      <DependentUpon>AreaFilterTitleRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\Area Filter\ScaleNotSetWarningRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Filters\Area Filter\ScaleNotSetWarningRow.Designer.cs">
+      <DependentUpon>ScaleNotSetWarningRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\Area Filter\AreaFilterTotalRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Filters\Area Filter\AreaFilterTotalRow.Designer.cs">
+      <DependentUpon>AreaFilterTotalRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\FilterState.cs" />
+    <Compile Include="Filters\Line Filter\CombinedTotalRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Filters\Line Filter\CombinedTotalRow.Designer.cs">
+      <DependentUpon>CombinedTotalRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\Line Filter\LineFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filters\Line Filter\LineFilterForm.Designer.cs">
+      <DependentUpon>LineFilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\Line Filter\LineFilterRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Filters\Line Filter\LineFilterRow.Designer.cs">
+      <DependentUpon>LineFilterRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\Line Filter\LineFilterTitleRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Filters\Line Filter\LineFilterTitleRow.Designer.cs">
+      <DependentUpon>LineFilterTitleRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\Line Filter\ScaleNotSetWarningRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Filters\Line Filter\ScaleNotSetWarningRow.Designer.cs">
+      <DependentUpon>ScaleNotSetWarningRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\Line Filter\LineFilterTotalRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Filters\Line Filter\LineFilterTotalRow.Designer.cs">
+      <DependentUpon>LineFilterTotalRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\Line Filter\SeamFilterRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Filters\Line Filter\SeamFilterRow.Designer.cs">
+      <DependentUpon>SeamFilterRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\Line Filter\SeamFilterTitleRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Filters\Line Filter\SeamFilterTitleRow.Designer.cs">
+      <DependentUpon>SeamFilterTitleRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filters\Line Filter\SeamFilterTotalRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Filters\Line Filter\SeamFilterTotalRow.Designer.cs">
+      <DependentUpon>SeamFilterTotalRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labels\ILabelManager.cs" />
+    <Compile Include="Labels\LabelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labels\LabelForm.Designer.cs">
+      <DependentUpon>LabelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Labels\GraphicsLabel.cs" />
+    <Compile Include="Labels\Label.cs" />
+    <Compile Include="Legend\Area Legend\AreaLegendCounterElement.cs" />
+    <Compile Include="Legend\Area Legend\AreaLegendFinishElement.cs" />
+    <Compile Include="Legend\Area Legend\AreaModeLegend.cs" />
+    <Compile Include="Legend\Line Legend\LineLegendNavigationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Line Legend\LineLegendNavigationForm.Designer.cs">
+      <DependentUpon>LineLegendNavigationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legend\LegendController.cs" />
+    <Compile Include="Legend\LegendLocation.cs" />
+    <Compile Include="Legend\LegendModeEnum.cs" />
+    <Compile Include="Legend\Area Legend\AreaLegendNavigationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\Area Legend\AreaLegendNavigationForm.Designer.cs">
+      <DependentUpon>AreaLegendNavigationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legend\LegendNotesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legend\LegendNotesForm.Designer.cs">
+      <DependentUpon>LegendNotesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legend\Line Legend\LineLegendElement.cs" />
+    <Compile Include="Legend\Line Legend\LineModeLegend.cs" />
+    <Compile Include="LockIcon\LockIcon.cs" />
+    <Compile Include="Markers and Guides\AreaModeStartMarker.cs" />
+    <Compile Include="Markers and Guides\CopyMarker.cs" />
+    <Compile Include="Markers and Guides\ExtendedCrosshairs.cs" />
+    <Compile Include="Markers and Guides\Field Guides\FieldGuide.cs" />
+    <Compile Include="Markers and Guides\Field Guides\FieldGuideController.cs" />
+    <Compile Include="Markers and Guides\Field Guides\FieldGuideGlobals.cs" />
+    <Compile Include="Markers and Guides\Field Guides\FieldGuideType.cs" />
+    <Compile Include="Markers and Guides\Guide.cs" />
+    <Compile Include="Markers and Guides\LineModeStartMarker.cs" />
+    <Compile Include="Markers and Guides\Marker.cs" />
+    <Compile Include="Markers and Guides\PlaceMarker.cs" />
+    <Compile Include="Markers and Guides\VertexEditMarker.cs" />
+    <Compile Include="Measuring Stick\MeasuringStick.cs" />
+    <Compile Include="Pan And Zoom\CustomZoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pan And Zoom\CustomZoom.Designer.cs">
+      <DependentUpon>CustomZoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pan And Zoom\PanAndZoomController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scale Ruler\ScaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scale Ruler\ScaleForm.Designer.cs">
+      <DependentUpon>ScaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scale Ruler\ScaleLineMarker.cs" />
+    <Compile Include="Scale Ruler\ScaleLineState.cs" />
+    <Compile Include="Scale Ruler\ScaleRuleController.cs" />
+    <Compile Include="Scale Ruler\SetScaleWarningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scale Ruler\SetScaleWarningForm.Designer.cs">
+      <DependentUpon>SetScaleWarningForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seaming Boundary\SeamingBoundary.cs" />
+    <Compile Include="Seaming Tool\SeamingTool.cs" />
+    <Compile Include="Seaming Tool\SeamingTool2.cs" />
+    <Compile Include="Seaming Tool\SeamingTool1.cs" />
+    <Compile Include="Seaming Tool\SeamingTool3.cs" />
+    <Compile Include="Shapes\TextBox\TextBoxDrawState.cs" />
+    <Compile Include="Shapes\TextBox\TextBoxController.cs" />
+    <Compile Include="Snap To Grid\SnapToGridController.cs" />
+    <Compile Include="Tape Measure\TapeMeasureMarker.cs" />
+    <Compile Include="Tape Measure\TapeMeasureState.cs" />
+    <Compile Include="Tape Measure\TapeMeasureController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FinishesLib\FinishesLib.csproj">
+      <Project>{70134c95-ba50-49d3-8fde-6df3a4deafdf}</Project>
+      <Name>FinishesLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Geometry\Geometry.csproj">
+      <Project>{b0c68da5-8d2c-43e1-843a-0fa0685e0731}</Project>
+      <Name>Geometry</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Globals\Globals.csproj">
+      <Project>{778b112c-93a6-4bd4-b171-04e362ddd126}</Project>
+      <Name>Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Graphics\Graphics.csproj">
+      <Project>{3aaf1aca-1e72-4bb3-a276-b9609039d71d}</Project>
+      <Name>Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MaterialsLayout\MaterialsLayout.csproj">
+      <Project>{dd9d024e-4979-43dc-a9b9-05f4fdc258d9}</Project>
+      <Name>MaterialsLayout</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OversUndersLib\OversUndersLib.csproj">
+      <Project>{59cbbbef-522d-4bcb-b134-0ce9333295fd}</Project>
+      <Name>OversUndersLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OversUnders\OversUnders.csproj">
+      <Project>{885f6c18-aa17-48c2-a45d-3a3a1ba46ea8}</Project>
+      <Name>OversUnders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SettingsAndShortcuts\SettingsLib.csproj">
+      <Project>{e7857c01-05b8-49ae-b811-e7041606bfd5}</Project>
+      <Name>SettingsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TracerLib\TracerLib.csproj">
+      <Project>{53183650-381b-4edc-8f0a-4b9b244b111c}</Project>
+      <Name>TracerLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{0d4ef8be-d883-44c7-bf1b-7ad6bce7e890}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Area and Seam Views\UCAreasView.resx">
+      <DependentUpon>UCAreasView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Area and Seam Views\UCRemnantsView.resx">
+      <DependentUpon>UCRemnantsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Area and Seam Views\UCRemnantViewElement.resx">
+      <DependentUpon>UCRemnantViewElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Area and Seam Views\UCSeamsView.resx">
+      <DependentUpon>UCSeamsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Counters\CounterControl.resx">
+      <DependentUpon>CounterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Counters\CounterRow.resx">
+      <DependentUpon>CounterRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Counters\CounterRowHeader.resx">
+      <DependentUpon>CounterRowHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Counters\CountersForm.resx">
+      <DependentUpon>CountersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filters\Area Filter\AreaFilterForm.resx">
+      <DependentUpon>AreaFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filters\Area Filter\AreaFilterRow.resx">
+      <DependentUpon>AreaFilterRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filters\Area Filter\AreaFilterTitleRow.resx">
+      <DependentUpon>AreaFilterTitleRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filters\Area Filter\ScaleNotSetWarningRow.resx">
+      <DependentUpon>ScaleNotSetWarningRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filters\Area Filter\AreaFilterTotalRow.resx">
+      <DependentUpon>AreaFilterTotalRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filters\Line Filter\CombinedTotalRow.resx">
+      <DependentUpon>CombinedTotalRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filters\Line Filter\LineFilterForm.resx">
+      <DependentUpon>LineFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filters\Line Filter\LineFilterRow.resx">
+      <DependentUpon>LineFilterRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filters\Line Filter\LineFilterTitleRow.resx">
+      <DependentUpon>LineFilterTitleRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filters\Line Filter\ScaleNotSetWarningRow.resx">
+      <DependentUpon>ScaleNotSetWarningRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filters\Line Filter\LineFilterTotalRow.resx">
+      <DependentUpon>LineFilterTotalRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filters\Line Filter\SeamFilterTitleRow.resx">
+      <DependentUpon>SeamFilterTitleRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labels\LabelForm.resx">
+      <DependentUpon>LabelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Line Legend\LineLegendNavigationForm.resx">
+      <DependentUpon>LineLegendNavigationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\Area Legend\AreaLegendNavigationForm.resx">
+      <DependentUpon>AreaLegendNavigationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legend\LegendNotesForm.resx">
+      <DependentUpon>LegendNotesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pan And Zoom\CustomZoom.resx">
+      <DependentUpon>CustomZoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scale Ruler\ScaleForm.resx">
+      <DependentUpon>ScaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scale Ruler\SetScaleWarningForm.resx">
+      <DependentUpon>SetScaleWarningForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Shapes\Arrow\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMicrosoft.Office.Interop.VisOcx">
+      <Guid>{F1A8DFE4-BC61-48BA-AFDA-96DF10247AF0}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.VisOcx">
+      <Guid>{F1A8DFE4-BC61-48BA-AFDA-96DF10247AF0}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

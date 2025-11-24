@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ToolTipObjectList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ToolTipObjectListing>
+    <ToolTipObject>
+      <ObjectName>btnToolStripSave</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Save project file</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnZoomIn</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Zoom in</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnZoomOut</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Zoom out</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnFitCanvas</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Fit to canvas</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnPanMode</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Pan mode</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnDrawMode</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Draw mode</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnAreaDesignState</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Select Area Mode</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnLineDesignState</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Select Line Mode</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnSeamDesignState</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Select Seam Mode</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnCombos</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Create combinations</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnFilterAreas</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Filter area types</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnFilterLines</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Filter line types</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnShowAreas</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Show areas</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnHideAreas</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Hide areas</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnEditAreas</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Edit areas</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnEditLines</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Edit lines</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnEditSeams</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Edit seams</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnEditFieldGuides</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Edit Field Guides</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnShowImage</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Show image</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnHideImage</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Hide image</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnShowFieldGuides</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Show Field Guides</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnHideFieldGuides</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Hide  Field Guides</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnDeleteFieldGuides</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Delete Field Guides</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnAutoSelect</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Highlight seam area</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnSnapToGrid</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Align to Grid</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnSetCustomScale</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Set custom  scale</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnTapeMeasure</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Lline measuring tool</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnRedoSeamsAndCuts</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Redo seams and cuts</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnOversUnders</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Overs / Unders</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnSummaryReport</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Summary Report</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnCounters</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Activate Counters</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnFullScreen</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Full screen mode</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>MLft</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>MRgt</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnShowToolTipEditor</ObjectName>
+      <ObjectType>System.Windows.Forms.ToolStripButton</ObjectType>
+      <ToolTipText>Show Tool Tip Editor</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnChangeShapesToSelected</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText>Change finish type</ToolTipText>
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnDoorTakeoutShow</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnLayoutLineActivate</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>rbnDoorTakeoutOther</ObjectName>
+      <ObjectType>System.Windows.Forms.RadioButton</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>rbnDoorTakeout6Ft</ObjectName>
+      <ObjectType>System.Windows.Forms.RadioButton</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>rbnDoorTakeout3Ft</ObjectName>
+      <ObjectType>System.Windows.Forms.RadioButton</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnLayoutLineDuplicate</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnLayoutLine2XMode</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnLayoutLineJump</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnLayoutLine1XMode</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnSetLinesTo2X</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnEditLineApply</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnEditLineClear</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnEditLineUndo</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>ckbEditLineHighlightAndApply</ObjectName>
+      <ObjectType>System.Windows.Forms.CheckBox</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnSetLinesTo1X</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnEditLineChangeLinesToSelected</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnEditLineDeleteLines</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnLineDesignStateLayoutMode</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnLineDesignStateEditMode</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnAreaDesignStateLayoutMode</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnAreaDesignStateEditMode</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnEditAreaApply</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnEditAreaClear</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnEditAreaUndo</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>ckbEditAreaHighlightAndApply</ObjectName>
+      <ObjectType>System.Windows.Forms.CheckBox</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnEditShape</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnDeleteShapes</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+	<ToolTipObject>
+	  <ObjectName>btnCopyAndPasteShapes</ObjectName>
+	  <ObjectType>System.Windows.Forms.Button</ObjectType>
+	  <ToolTipText>$AreaShortcutKeys.CopyAndPaste</ToolTipText> />
+	</ToolTipObject>
+	<ToolTipObject>
+	  <ObjectName>btnFixedWidthJump</ObjectName>
+	  <ObjectType>System.Windows.Forms.Button</ObjectType>
+	  <ToolTipText>$AreaShortcutKeys.ProcessFixedWidthJump</ToolTipText> />
+	</ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>ckbFixedWidth</ObjectName>
+      <ObjectType>System.Windows.Forms.CheckBox</ObjectType>
+		<ToolTipText>$AreaShortcutKeys.ToggleFixedWidth</ToolTipText> />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnEmbeddLayoutAreas</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+		<ToolTipText>$AreaShortcutKeys.EmbedShape</ToolTipText> />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnLayoutAreaTakeOutAndFill</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+		<ToolTipText>$AreaShortcutKeys.TakeoutAndFill</ToolTipText> />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnLayoutAreaTakeout</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+		<ToolTipText>$AreaShortcutKeys.Takeout</ToolTipText> />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnAreaDesignStateZeroLine</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+		<ToolTipText>$AreaShortcutKeys.ToggleZeroLineMode</ToolTipText> />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnCompleteShapeByIntersection</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+		<ToolTipText>$AreaShortcutKeys.CompleteShapeByIntersection</ToolTipText> />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnAreaDesignStateCompleteDrawing</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+		<ToolTipText>$AreaShortcutKeys.CompleteShape</ToolTipText> />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>ckbShowUnders</ObjectName>
+      <ObjectType>System.Windows.Forms.CheckBox</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>ckbShowOvers</ObjectName>
+      <ObjectType>System.Windows.Forms.CheckBox</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>ckbShowCuts</ObjectName>
+      <ObjectType>System.Windows.Forms.CheckBox</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnCenterSeamingToolInView</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>rbnVirtualSeamsShowUnhideable</ObjectName>
+      <ObjectType>System.Windows.Forms.RadioButton</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>rbnVirtualSeamsHideAll</ObjectName>
+      <ObjectType>System.Windows.Forms.RadioButton</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>rbnVirtualSeamsShowAll</ObjectName>
+      <ObjectType>System.Windows.Forms.RadioButton</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>rbnNormalSeamsHideAll</ObjectName>
+      <ObjectType>System.Windows.Forms.RadioButton</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>rbnNormalSeamsShowUnHideable</ObjectName>
+      <ObjectType>System.Windows.Forms.RadioButton</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>rbnNormalSeamsShowAll</ObjectName>
+      <ObjectType>System.Windows.Forms.RadioButton</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnSubdivideRegion</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnSeamArea</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnSeamSingleLineToTool</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnAlignTool</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnShowSeamingTool</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>rbnSubdivideByArea</ObjectName>
+      <ObjectType>System.Windows.Forms.RadioButton</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>rbnSubdivideByLine</ObjectName>
+      <ObjectType>System.Windows.Forms.RadioButton</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnRemoveSubdivision</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnCancelSubdivision</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnCompleteSubdivision</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnSeamDesignStateSelectionMode</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>btnSeamDesignStateSubdivisionMode</ObjectName>
+      <ObjectType>System.Windows.Forms.Button</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>rbnViewSeams</ObjectName>
+      <ObjectType>System.Windows.Forms.RadioButton</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+    <ToolTipObject>
+      <ObjectName>rbnViewAreas</ObjectName>
+      <ObjectType>System.Windows.Forms.RadioButton</ObjectType>
+      <ToolTipText />
+    </ToolTipObject>
+  </ToolTipObjectListing>
+</ToolTipObjectList>

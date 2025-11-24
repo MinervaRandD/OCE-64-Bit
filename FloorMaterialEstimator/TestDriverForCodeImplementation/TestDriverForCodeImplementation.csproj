@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Geometry\Geometry.csproj" />
+    <ProjectReference Include="..\Graphics\Graphics.csproj" />
+    <ProjectReference Include="..\MaterialsLayout\MaterialsLayout.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AxInterop.Microsoft.Office.Interop.VisOcx">
+      <HintPath>..\References\AxInterop.Microsoft.Office.Interop.VisOcx.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Visio">
+      <HintPath>..\References\Microsoft.Office.Interop.Visio.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.VisOcx">
+      <HintPath>..\References\Microsoft.Office.Interop.VisOcx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

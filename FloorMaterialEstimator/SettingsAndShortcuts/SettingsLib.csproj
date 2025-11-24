@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7857C01-05B8-49AE-B811-E7041606BFD5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SettingsAndShortcuts</RootNamespace>
+    <AssemblyName>SettingsAndShortcuts</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlobalSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalSettingsForm.designer.cs">
+      <DependentUpon>GlobalSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\GlobalSettings.cs" />
+    <Compile Include="Settings\GlobalSettingsController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shortcuts\ShortcutMode.cs" />
+    <Compile Include="Shortcuts\ShortcutSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shortcuts\ShortcutSettingsForm.Designer.cs">
+      <DependentUpon>ShortcutSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolTipManagement\ToolTipObject.cs" />
+    <Compile Include="Shortcuts\ShortcutSettings.cs" />
+    <Compile Include="ToolTipManagement\ToolTipEditManager.cs" />
+    <Compile Include="ToolTipManagement\ToolTipObjectList.cs" />
+    <Compile Include="ToolTipManagement\Tool Tip Setting Form\ToolTipSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolTipManagement\Tool Tip Setting Form\ToolTipSettingsForm.Designer.cs">
+      <DependentUpon>ToolTipSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolTipManagement\Tool Tip Setting Form\UCToolTipCheckBoxItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolTipManagement\Tool Tip Setting Form\UCToolTipCheckBoxItem.Designer.cs">
+      <DependentUpon>UCToolTipCheckBoxItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolTipManagement\Tool Tip Setting Form\UCToolTipRadioButtonItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolTipManagement\Tool Tip Setting Form\UCToolTipRadioButtonItem.Designer.cs">
+      <DependentUpon>UCToolTipRadioButtonItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolTipManagement\Tool Tip Setting Form\UCToolTipButtonItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolTipManagement\Tool Tip Setting Form\UCToolTipButtonItem.Designer.cs">
+      <DependentUpon>UCToolTipButtonItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolTipManagement\Tool Tip Setting Form\UCToolTipToolBarButtonItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolTipManagement\Tool Tip Setting Form\UCToolTipToolBarButtonItem.Designer.cs">
+      <DependentUpon>UCToolTipToolBarButtonItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FinishesLib\FinishesLib.csproj">
+      <Project>{70134c95-ba50-49d3-8fde-6df3a4deafdf}</Project>
+      <Name>FinishesLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Globals\Globals.csproj">
+      <Project>{778b112c-93a6-4bd4-b171-04e362ddd126}</Project>
+      <Name>Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Graphics\Graphics.csproj">
+      <Project>{3aaf1aca-1e72-4bb3-a276-b9609039d71d}</Project>
+      <Name>Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TracerLib\TracerLib.csproj">
+      <Project>{53183650-381b-4edc-8f0a-4b9b244b111c}</Project>
+      <Name>TracerLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{0D4EF8BE-D883-44C7-BF1B-7AD6BCE7E890}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GlobalSettingsForm.resx">
+      <DependentUpon>GlobalSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shortcuts\ShortcutSettingsForm.resx">
+      <DependentUpon>ShortcutSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolTipManagement\Tool Tip Setting Form\ToolTipSettingsForm.resx">
+      <DependentUpon>ToolTipSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolTipManagement\Tool Tip Setting Form\UCToolTipCheckBoxItem.resx">
+      <DependentUpon>UCToolTipCheckBoxItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolTipManagement\Tool Tip Setting Form\UCToolTipRadioButtonItem.resx">
+      <DependentUpon>UCToolTipRadioButtonItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolTipManagement\Tool Tip Setting Form\UCToolTipButtonItem.resx">
+      <DependentUpon>UCToolTipButtonItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolTipManagement\Tool Tip Setting Form\UCToolTipToolBarButtonItem.resx">
+      <DependentUpon>UCToolTipToolBarButtonItem.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

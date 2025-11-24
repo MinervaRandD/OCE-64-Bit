@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4390266-8CB8-4171-A467-C17BA014B6EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SummaryReport</RootNamespace>
+    <AssemblyName>SummaryReport</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AreasTitleRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AreasTitleRow.Designer.cs">
+      <DependentUpon>AreasTitleRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CntrRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CntrRow.Designer.cs">
+      <DependentUpon>CntrRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CntrTitleRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CntrTitleRow.Designer.cs">
+      <DependentUpon>CntrTitleRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exporters\ExcelExportSummaryReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exporters\ExcelExportSummaryReportForm.Designer.cs">
+      <DependentUpon>ExcelExportSummaryReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exporters\ExcelExportFullReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exporters\ExcelExportFullReportForm.Designer.cs">
+      <DependentUpon>ExcelExportFullReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exporters\SelectOpenWorkbookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exporters\SelectOpenWorkbookForm.Designer.cs">
+      <DependentUpon>SelectOpenWorkbookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exporters\TextExportSummaryReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exporters\TextExportSummaryReportForm.Designer.cs">
+      <DependentUpon>TextExportSummaryReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exporters\TextExportFullReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exporters\TextExportFullReportForm.Designer.cs">
+      <DependentUpon>TextExportFullReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IReportRow.cs" />
+    <Compile Include="LineRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LineRow.Designer.cs">
+      <DependentUpon>LineRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LineTitleRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LineTitleRow.Designer.cs">
+      <DependentUpon>LineTitleRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List Controllers\AreaListController.cs" />
+    <Compile Include="List Controllers\CntrListController.cs" />
+    <Compile Include="List Controllers\LineListController.cs" />
+    <Compile Include="List Controllers\SeamListController.cs" />
+    <Compile Include="TileRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TileRow.Designer.cs">
+      <DependentUpon>TileRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportRowType.cs" />
+    <Compile Include="RollRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RollRow.Designer.cs">
+      <DependentUpon>RollRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RowColumnWidths.cs" />
+    <Compile Include="SeamRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SeamRow.Designer.cs">
+      <DependentUpon>SeamRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeamTitleRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SeamTitleRow.Designer.cs">
+      <DependentUpon>SeamTitleRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List Controllers\SectionListController.cs" />
+    <Compile Include="SummaryReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryReportForm.Designer.cs">
+      <DependentUpon>SummaryReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SummaryReportTableHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SummaryReportTableHeader.Designer.cs">
+      <DependentUpon>SummaryReportTableHeader.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AreasTitleRow.resx">
+      <DependentUpon>AreasTitleRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CntrRow.resx">
+      <DependentUpon>CntrRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CntrTitleRow.resx">
+      <DependentUpon>CntrTitleRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exporters\ExcelExportSummaryReportForm.resx">
+      <DependentUpon>ExcelExportSummaryReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exporters\ExcelExportFullReportForm.resx">
+      <DependentUpon>ExcelExportFullReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exporters\SelectOpenWorkbookForm.resx">
+      <DependentUpon>SelectOpenWorkbookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exporters\TextExportSummaryReportForm.resx">
+      <DependentUpon>TextExportSummaryReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exporters\TextExportFullReportForm.resx">
+      <DependentUpon>TextExportFullReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LineRow.resx">
+      <DependentUpon>LineRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LineTitleRow.resx">
+      <DependentUpon>LineTitleRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TileRow.resx">
+      <DependentUpon>TileRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RollRow.resx">
+      <DependentUpon>RollRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeamRow.resx">
+      <DependentUpon>SeamRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeamTitleRow.resx">
+      <DependentUpon>SeamTitleRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryReportForm.resx">
+      <DependentUpon>SummaryReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryReportTableHeader.resx">
+      <DependentUpon>SummaryReportTableHeader.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CanvasLib\CanvasLib.csproj">
+      <Project>{cb086504-fa9c-404f-9c24-5b73d9a224b8}</Project>
+      <Name>CanvasLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CanvasManager\CanvasManagerLib.csproj">
+      <Project>{5c42a79a-d44a-413f-90ad-ba61e35f17bd}</Project>
+      <Name>CanvasManagerLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FinishesLib\FinishesLib.csproj">
+      <Project>{70134c95-ba50-49d3-8fde-6df3a4deafdf}</Project>
+      <Name>FinishesLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Globals\Globals.csproj">
+      <Project>{778b112c-93a6-4bd4-b171-04e362ddd126}</Project>
+      <Name>Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{0d4ef8be-d883-44c7-bf1b-7ad6bce7e890}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

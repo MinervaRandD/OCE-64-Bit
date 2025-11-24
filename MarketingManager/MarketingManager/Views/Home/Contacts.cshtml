@@ -1,0 +1,194 @@
+﻿@{
+    ViewData["Title"] = "Contacs";
+}
+<h1 style="text-align:center;color:maroon;">Marketing Manager</h1>
+
+<script>
+    
+function editContact(contactId)
+{
+    console.log('editing ' + contactId)
+}
+
+function deleteContact(contactId)
+{
+    console.log('deleting ' + contactId)
+}
+
+</script>
+<div class="container-fluid">
+   
+    <div style="text-align:center;border:solid;border-color:maroon;padding:48px;border-width:4px;border-radius:24px;margin:4px;height:100%;width:100%">
+        <h3 style="margin-top:-69px;margin-left:5px;background:white;width:128px">Contacts</h3>
+        <div style="height:32px"></div>
+                
+        <table class="table table-striped table-bordered table-hover">
+            <tbody>
+                @foreach (var contact in ViewBag.contactList)
+                    {
+                        <tr>
+                            <td></td>
+                            <td style="text-align:left">@contact.PointOfContact</td>
+                            <td style="text-align:left">@contact.CompanyName</td>
+                            <td style="text-align:left">@contact.CompanyAddress1</td>
+                            <td style="text-align:left">@contact.CompanyAddress2</td>
+                            <td style="text-align:left">@contact.CompanyCity</td>
+                            <td style="text-align:left">@contact.CompanyStateOrRegion</td>
+                            <td td style="text-align:left">@contact.CompanyCountry</td>
+                            <td style="text-align:left">@contact.ContactPhone</td>
+                            <td style="text-align:left">@contact.ContactEmail</td>
+                            <td>@contact.ContactWebSite</td>
+                            <td>@contact.Comments</td>
+                            <td style="width:28px;"><img src="~/img/EditIcon.png" /></td>
+                            <td style="width:28px;"><img src="~/img/DeleteIcon.png"  style="height:24px;width:24px;" onclick="deleteContact('@contact.ContactId')" /></td>
+                        </tr>
+                    }
+                            
+                </tbody>
+        </table>
+    </div>
+   
+</div>
+
+<!-- The Modal -->
+<div id="uploadModal" class="modal" style="width:100%;height:1024px">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2 style="text-align:center;">Upload Contacts</h2>
+    </div>
+    
+    <input type="file" id="input" style="display:none;" name="file"/>
+
+    <div class="modal-body">
+        <div style="text-align:center">
+            <div id="drop-area"  style="color:maroon;border: 4px solid maroon;width: 100px;height: 100px;text-align:center;display:inline-block">
+                <p>Drag contact file here</p>   
+            </div>
+            <h2 style="display:inline-block"> OR ...</h2>
+            <input type="button"  value="Browse..." onclick="document.getElementById('input').click();" style="display:inline-block"/>
+        </div>
+        <div style="height:48px"></div>
+        <div style="text-align:center">
+            <button id="ClearCurrentContacts" style="display:inline-block">Clear Current Contacts</button>
+            <button id="AddToCurrentContacts" style="display:inline-block">Add To Current Contacts</button>
+            <button style="display:inline-block">Automatically Create Markers</button>
+        </div>
+    </div>
+    
+  </div>
+
+</div>
+<div style="height:32px"></div>
+
+<div style="text-align:center">
+    <button id="uploadBtn">Upload Contacts</button>
+</div>
+
+<input type="file" id="input" style="display:none;" name="file"/>
+<script>
+
+    document.getElementById('input').addEventListener('change', function(e) {
+          let file = document.getElementById('input').files[0];
+
+          (async () => {
+            const fileContent = await file.text();
+
+            const textLines = fileContent.split(/\r?\n/);
+
+            textLines.forEach((value) => console.log(value));
+          })();
+        });
+        
+    const dropArea = document.getElementById('drop-area');
+
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+        dropArea.addEventListener(eventName, preventDefaults, false);
+        });
+
+    function preventDefaults (e) {
+        e.preventDefault();
+        e.stopPropagation();
+    } 
+
+    dropArea.addEventListener('drop', handleDrop, false);
+
+    function handleDrop(ev) {
+    console.log('File(s) dropped');
+
+    // Prevent default behavior (Prevent file from being opened)
+    ev.preventDefault();
+
+    if (ev.dataTransfer.items) {
+        // Use DataTransferItemList interface to access the file(s)
+        [...ev.dataTransfer.items].forEach((item, i) => {
+            // If dropped items aren't files, reject them
+                if (item.kind === 'file') {
+                    const file = item.getAsFile();
+
+                    var fr  = new FileReader();
+
+                    fr.onload = function(e)
+                    {
+                        console.log(e.target.result);
+                    }
+
+                    fr.readAsText(file);
+
+                    console.log('Is file' + `… file[${i}].name = ${file.name}`);
+       
+                }
+        });
+    }
+        
+    else {
+        // Use DataTransfer interface to access the file(s)
+        [...ev.dataTransfer.files].forEach((file, i) => {
+            console.log(`… file[${i}].name = ${file.name}`);
+        });
+    }
+    }
+    function dragOverHandler(ev)
+    {
+        console.log("dragOverEvent");
+
+        var dropZone = document.getElementById("drop_zone");
+
+        dropZone.style.backgroundColor = "lightgray";
+    }
+
+function mouseleaveEventHandler(ev)
+{
+  
+    var dropZone = document.getElementById("drop_zone");
+
+    dropZone.style.backgroundColor = "white";
+}
+// Get the modal
+var modal = document.getElementById("uploadModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("uploadBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+ modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>

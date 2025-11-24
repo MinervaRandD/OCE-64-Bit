@@ -1,0 +1,1100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C419AD6-8690-4752-AB41-FAC9A934C813}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FloorMaterialEstimator</RootNamespace>
+    <AssemblyName>FloorMaterialEstimator</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;MONITORLEVEL1</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;TRACE1</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;MONITORLEVEL1</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DeepNestLib">
+      <HintPath>..\..\Deepnest\DeepNestLib\bin\Debug\DeepNestLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Visio, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\References\Microsoft.Office.Interop.Visio.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NetTopologySuite, Version=2.0.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetTopologySuite.2.5.0\lib\netstandard2.0\NetTopologySuite.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="Syncfusion.Shared.Base">
+      <HintPath>..\References\Syncfusion.Shared.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base Form\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base Form\Debug Mode\ConsistencyChecker.cs" />
+    <Compile Include="Base Form\Debug Mode\DebugForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Debug Mode\DebugForm.Designer.cs">
+      <DependentUpon>DebugForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base Form\Debug Mode\DebugMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Debug Mode\DebugSupportRoutines.cs" />
+    <Compile Include="Base Form\Design States\AreaDesignState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Design States\EditLineMode.cs" />
+    <Compile Include="Base Form\Design States\LineDesignState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Design States\SeamDesignState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Design States\DesignStateChangeEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Editing Form Events\EditingFormEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\ExceptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\ExceptionForm.Designer.cs">
+      <DependentUpon>ExceptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\AutosaveModelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\AutosaveModelForm.Designer.cs">
+      <DependentUpon>AutosaveModelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\BaseFormInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\FloorMaterialEstimatorBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\FloorMaterialEstimatorBaseForm.designer.cs">
+      <DependentUpon>FloorMaterialEstimatorBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\FloorMaterialEstimatorKeyEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\FloorMaterialEstimatorToolStripEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\GlobalInitialization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\ImageReplacerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\ImageReplacerForm.designer.cs">
+      <DependentUpon>ImageReplacerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base Form\StencilsHelpers\MSStencilHelper.cs" />
+    <Compile Include="Base Form\Keyboard and Mouse Actions\UCKeyboardAndMouseActionsElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base Form\Keyboard and Mouse Actions\UCKeyboardAndMouseActionsElement.Designer.cs">
+      <DependentUpon>UCKeyboardAndMouseActionsElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base Form\Keyboard and Mouse Actions\KeyboardAndMouseActionsForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base Form\Keyboard and Mouse Actions\KeyboardAndMouseActionsForms.Designer.cs">
+      <DependentUpon>KeyboardAndMouseActionsForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CanvasManager\Canvas Shapes\Canvas Layout Area\CanvasLayoutAreaSubdivide.cs" />
+    <Compile Include="CanvasManager\Canvas Shapes\Canvas Layout Area\CanvasLayoutAreaMerge.cs" />
+    <Compile Include="CanvasManager\Canvas Shapes\CanvasCut.cs" />
+    <Compile Include="CanvasManager\Canvas Shapes\CanvasDirectedPolygon.cs" />
+    <Compile Include="CanvasManager\Canvas Shapes\CanvasSeam.cs" />
+    <Compile Include="CanvasManager\Canvas Shapes\CanvasSeamTag.cs" />
+    <Compile Include="CanvasManager\Canvas Shapes\PatternFill.cs" />
+    <Compile Include="CanvasManager\Design State Managers\Line Design State Managers\LineLayoutState.cs" />
+    <Compile Include="CanvasManager\Design State Managers\Seam Design State Managers\SeamDesignStateSelectAreaManager1.cs" />
+    <Compile Include="CanvasManager\Finish Managers\FinishManagerGlobals.cs" />
+    <Compile Include="CanvasManager\Finish Managers\LineFinishManagerList.cs" />
+    <Compile Include="CanvasManager\Finish Managers\AreaFinishManagerList.cs" />
+    <Compile Include="CanvasManager\Finish Managers\SeamFinishManagerList.cs" />
+    <Compile Include="CanvasManager\LabelManager.cs" />
+    <Compile Include="CanvasManager\Rotation\Rotater.cs" />
+    <Compile Include="CanvasManager\Rotation\RotationBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CanvasManager\Rotation\RotationBaseForm.Designer.cs">
+      <DependentUpon>RotationBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CanvasManager\Stencils\SeamStateLockIconStencil.cs" />
+    <Compile Include="CanvasManager\Stencils\MeasuringStickStencil.cs" />
+    <Compile Include="CanvasManager\Design State Managers\Seam Design State Managers\SeamDesignStateRemnantAnalysisManager.cs" />
+    <Compile Include="CanvasManager\Event Managers\KeyModifiers.cs" />
+    <Compile Include="CanvasManager\Finish Managers\AreaFinishManager.cs" />
+    <Compile Include="CanvasManager\Finish Managers\LineFinishManager.cs" />
+    <Compile Include="CanvasManager\Finish Managers\SeamFinishManager.cs" />
+    <Compile Include="CanvasManager\Stats Calculators\RolloutStatsCalculator.cs" />
+    <Compile Include="CanvasManager\VertexEditor.cs" />
+    <Compile Include="Combos\ComboOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Combos\ComboOptionsForm.Designer.cs">
+      <DependentUpon>ComboOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Combos\CombosBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Combos\CombosBaseForm.Designer.cs">
+      <DependentUpon>CombosBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Combos\ComboSolutionGenerator.cs" />
+    <Compile Include="Combos\UCComboElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Combos\UCComboElement.Designer.cs">
+      <DependentUpon>UCComboElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CutUndrsNesting\CutUndrNestingBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CutUndrsNesting\CutUndrNestingBaseForm.Designer.cs">
+      <DependentUpon>CutUndrNestingBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CutUndrsNesting\UCCutUndrsNestingNestControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CutUndrsNesting\UCCutUndrsNestingNestControl.Designer.cs">
+      <DependentUpon>UCCutUndrsNestingNestControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CutUndrsNesting\UCCutUndrsNestingSelectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CutUndrsNesting\UCCutUndrsNestingSelectionControl.Designer.cs">
+      <DependentUpon>UCCutUndrsNestingSelectionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CutUndrsNesting\UCUndrElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CutUndrsNesting\UCUndrElement.Designer.cs">
+      <DependentUpon>UCUndrElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CutUndrsNesting\UCCutElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CutUndrsNesting\UCCutElement.Designer.cs">
+      <DependentUpon>UCCutElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog Boxes\NewBlankProjectWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog Boxes\NewBlankProjectWarning.Designer.cs">
+      <DependentUpon>NewBlankProjectWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog Boxes\ChooseCompleteLSolution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog Boxes\ChooseCompleteLSolution.Designer.cs">
+      <DependentUpon>ChooseCompleteLSolution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog Boxes\SaveProjectWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog Boxes\SaveProjectWarning.Designer.cs">
+      <DependentUpon>SaveProjectWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog Boxes\OpenProjectWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog Boxes\OpenProjectWarning.Designer.cs">
+      <DependentUpon>OpenProjectWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog Boxes\NewProjectWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog Boxes\NewProjectWarning.Designer.cs">
+      <DependentUpon>NewProjectWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog Boxes\ExitProgramWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog Boxes\ExitProgramWarning.Designer.cs">
+      <DependentUpon>ExitProgramWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\Field Guide Editor\FieldGuideEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\Field Guide Editor\FieldGuideEditForm.Designer.cs">
+      <DependentUpon>FieldGuideEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\Seam Finish Editor\SeamFinishesEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\Seam Finish Editor\SeamFinishesEditForm.Designer.cs">
+      <DependentUpon>SeamFinishesEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lines and Finishes\Supporting Controls\UCCustomPatternPallet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lines and Finishes\Supporting Controls\UCCustomPatternPallet.Designer.cs">
+      <DependentUpon>UCCustomPatternPallet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lines and Finishes\Supporting Controls\UCLineWidth.cs" />
+    <Compile Include="Lines and Finishes\Supporting Controls\UCLineWidth.Designer.cs">
+      <DependentUpon>UCLineWidth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Overs Unders Form\ExportReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Overs Unders Form\ExportReportForm.Designer.cs">
+      <DependentUpon>ExportReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Overs Unders Form\OversUndersCommon.cs" />
+    <Compile Include="Overs Unders Form\OversUndersForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Overs Unders Form\OversUndersForm2.Designer.cs">
+      <DependentUpon>OversUndersForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCCutsExtraFormElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCCutsExtraFormElement.Designer.cs">
+      <DependentUpon>UCCutsExtraFormElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCOversOversUndersFormElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCOversOversUndersFormElement.Designer.cs">
+      <DependentUpon>UCOversOversUndersFormElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCRptsElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCRptsElement.Designer.cs">
+      <DependentUpon>UCRptsElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCSmallFillElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCSmallFillElement.Designer.cs">
+      <DependentUpon>UCSmallFillElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCVirtualCutsOversUndersFormElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCVirtualCutsOversUndersFormElement.Designer.cs">
+      <DependentUpon>UCVirtualCutsOversUndersFormElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCFillSummaryElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCFillSummaryElement.Designer.cs">
+      <DependentUpon>UCFillSummaryElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCVirtualUndrsOversUndersFormElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCVirtualUndrsOversUndersFormElement.Designer.cs">
+      <DependentUpon>UCVirtualUndrsOversUndersFormElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCVirtualOversOversUndersFormElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCVirtualOversOversUndersFormElement.Designer.cs">
+      <DependentUpon>UCVirtualOversOversUndersFormElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCUndrsOversUndersFormElement .cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCUndrsOversUndersFormElement .Designer.cs">
+      <DependentUpon>UCUndrsOversUndersFormElement .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCCutsOversUndersFormElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCCutsOversUndersFormElement.Designer.cs">
+      <DependentUpon>UCCutsOversUndersFormElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCOversUndersFormElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Overs Unders Form\UCOversUndersFormElement.Designer.cs">
+      <DependentUpon>UCOversUndersFormElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Overs Unders Form\UndersNestingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Overs Unders Form\UndersNestingForm.Designer.cs">
+      <DependentUpon>UndersNestingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project Import and Export\ProgressReporter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project Import and Export\ProgressReporter.Designer.cs">
+      <DependentUpon>ProgressReporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project Import and Export\ProgressReporterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project Import and Export\ProgressReporterForm.Designer.cs">
+      <DependentUpon>ProgressReporterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project Import and Export\ProjectSetupExporter.cs" />
+    <Compile Include="Project Import and Export\ProjectSetupImporter.cs" />
+    <Compile Include="Project Import and Export\Serializables\CoordinateSerializable.cs" />
+    <Compile Include="Project Import and Export\ImageExporter.cs" />
+    <Compile Include="Project Import and Export\Serializables\CutIndexSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\DirectedLineGeometricSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\DoubleTupleSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\FieldGuideControllerSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\FieldGuideSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\LegendSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\OverageIndexSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\ProjectOptionsSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\ProjectSetupSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\RectangleSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\RemnantCutSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\RolloutSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\SeamTagSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\TextBoxSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\UndrageIndexSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\VirtualOverageSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\VirtualUndrageSerializable.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Supporting Forms and Controls\CustomZoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supporting Forms and Controls\CustomZoom.Designer.cs">
+      <DependentUpon>CustomZoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supporting Forms and Controls\RedoSeamingInquiryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supporting Forms and Controls\RedoSeamingInquiryForm.Designer.cs">
+      <DependentUpon>RedoSeamingInquiryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestAndDebug.cs" />
+    <Compile Include="Project Import and Export\CanvasEraser.cs" />
+    <Compile Include="Project Import and Export\Serializables\InternalDirectedPolygonSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\PageSerializable.cs" />
+    <Compile Include="CanvasManager\Design State Managers\Area Design State Managers\AreaEditManager.cs" />
+    <Compile Include="CanvasManager\Design State Managers\Area Design State Managers\AreaDesignStateManager.cs" />
+    <Compile Include="CanvasManager\Canvas Shapes\Canvas Layout Area\CanvasLayoutArea.cs" />
+    <Compile Include="CanvasManager\Canvas Shapes\IAreaShape.cs" />
+    <Compile Include="CanvasManager\AreaShapeBuildStatus.cs" />
+    <Compile Include="CanvasManager\Canvas Shapes\CanvasDirectedLine.cs" />
+    <Compile Include="CanvasManager\Canvas Shapes\CanvasDirectedPolyline.cs" />
+    <Compile Include="CanvasManager\CanvasManager.cs" />
+    <Compile Include="CanvasManager\Canvas Shapes\ShapeInventoryManagement.cs" />
+    <Compile Include="CanvasManager\CanvasPage.cs" />
+    <Compile Include="CanvasManager\Design State Managers\Seam Design State Managers\SeamDesignStateSubdivideAreaManager.cs" />
+    <Compile Include="CanvasManager\Design State Managers\Seam Design State Managers\SeamDesignStateManager.cs" />
+    <Compile Include="CanvasManager\Design State Managers\Area Design State Managers\AreaLayoutManager.cs" />
+    <Compile Include="CanvasManager\Design State Managers\General Mode Managers\GeneralModeManager.cs" />
+    <Compile Include="CanvasManager\Design State Managers\Line Design State Managers\LineEditManager.cs" />
+    <Compile Include="CanvasManager\Event Managers\KeyPressEventManager.cs" />
+    <Compile Include="CanvasManager\Event Managers\MouseEventManager.cs" />
+    <Compile Include="CanvasManager\Event Managers\PanAndZoomManager.cs" />
+    <Compile Include="Base Form\Design States\DesignState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CanvasManager\Design State Managers\Line Design State Managers\LineLayoutManager.cs" />
+    <Compile Include="CanvasManager\Design State Managers\Line Design State Managers\LineDesignStateManager.cs" />
+    <Compile Include="CanvasManager\Shape Managers\LineManager.cs" />
+    <Compile Include="CanvasManager\Shape Managers\PolylineManager.cs" />
+    <Compile Include="CanvasManager\Shape Managers\RectangleManager.cs" />
+    <Compile Include="DebugState.cs" />
+    <Compile Include="Project Import and Export\Serializables\BaseLineSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\TakeoutSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\CounterSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\CutSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\DirectedLineSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\DirectedPolygonSerializable.cs" />
+    <Compile Include="Project Import and Export\DrawingImporter.cs" />
+    <Compile Include="Base Form\Design States\EditAreaMode.cs" />
+    <Compile Include="Lines and Finishes\Editing Forms\Area Finish Editor\AreaFinishesEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\Area Finish Editor\AreaFinishesEditForm.Designer.cs">
+      <DependentUpon>AreaFinishesEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\Line Finish Editor\LineFinishesEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\Line Finish Editor\LineFinishesEditForm.Designer.cs">
+      <DependentUpon>LineFinishesEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\Area Finish Editor\UCAreaFinishEditFormElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\Area Finish Editor\UCAreaFinishEditFormElement.Designer.cs">
+      <DependentUpon>UCAreaFinishEditFormElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lines and Finishes\Supporting Controls\UCCustomColorPallet.cs" />
+    <Compile Include="Lines and Finishes\Supporting Controls\UCCustomColorPallet.Designer.cs">
+      <DependentUpon>UCCustomColorPallet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lines and Finishes\Supporting Controls\UCCustomDashType.cs" />
+    <Compile Include="Lines and Finishes\Supporting Controls\UCCustomDashType.Designer.cs">
+      <DependentUpon>UCCustomDashType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lines and Finishes\Supporting Controls\UCDashTypeListElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lines and Finishes\Supporting Controls\UCDashTypeListElement.Designer.cs">
+      <DependentUpon>UCDashTypeListElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\Line Finish Editor\UCLineFinishEditFormElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\Line Finish Editor\UCLineFinishEditFormElement.Designer.cs">
+      <DependentUpon>UCLineFinishEditFormElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base Form\Floor Materials Base Form\FloorMaterialEstimatorBaseFormEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LineDrawingMode.cs" />
+    <Compile Include="Lines and Finishes\Supporting Controls\UCSeamListElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lines and Finishes\Supporting Controls\UCSeamListElement.Designer.cs">
+      <DependentUpon>UCSeamListElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Project Import and Export\ImportExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project Import and Export\Serializables\EmbeddedCutSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\LayoutAreaSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\ProjectSerializable.cs" />
+    <Compile Include="Project Import and Export\ProjectExporter.cs" />
+    <Compile Include="Project Import and Export\ProjectImporter.cs" />
+    <Compile Include="Project Import and Export\Serializables\OverageSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\SeamSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\UCLinePaletteElementSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\UCLinePaletteSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\UCSeamPalletElementSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\UCSeamPalletSerializable.cs" />
+    <Compile Include="Project Import and Export\Serializables\UndrageSerializable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Lines and Finishes\Editing Forms\LineEditSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\LineEditSettings.Designer.cs">
+      <DependentUpon>LineEditSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\AreaEditSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\AreaEditSettings.Designer.cs">
+      <DependentUpon>AreaEditSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\ExamplePolygon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lines and Finishes\Editing Forms\ExamplePolygon.Designer.cs">
+      <DependentUpon>ExamplePolygon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supporting Forms and Controls\LineFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supporting Forms and Controls\LineFilter.Designer.cs">
+      <DependentUpon>LineFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDrawColor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDrawColor.Designer.cs">
+      <DependentUpon>UCDrawColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCGroupElement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCGroupElement.Designer.cs" />
+    <Compile Include="UCGroupElement1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UCGroupElement.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Base Form\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base Form\Debug Mode\DebugForm.resx">
+      <DependentUpon>DebugForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base Form\ExceptionForm.resx">
+      <DependentUpon>ExceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base Form\Floor Materials Base Form\AutosaveModelForm.resx">
+      <DependentUpon>AutosaveModelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base Form\Floor Materials Base Form\FloorMaterialEstimatorBaseForm.resx">
+      <DependentUpon>FloorMaterialEstimatorBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base Form\Floor Materials Base Form\ImageReplacerForm.resx">
+      <DependentUpon>ImageReplacerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base Form\Keyboard and Mouse Actions\UCKeyboardAndMouseActionsElement.resx">
+      <DependentUpon>UCKeyboardAndMouseActionsElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base Form\Keyboard and Mouse Actions\KeyboardAndMouseActionsForms.resx">
+      <DependentUpon>KeyboardAndMouseActionsForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CanvasManager\Rotation\RotationBaseForm.resx">
+      <DependentUpon>RotationBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CutUndrsNesting\CutUndrNestingBaseForm.resx">
+      <DependentUpon>CutUndrNestingBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CutUndrsNesting\UCCutUndrsNestingNestControl.resx">
+      <DependentUpon>UCCutUndrsNestingNestControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CutUndrsNesting\UCCutUndrsNestingSelectionControl.resx">
+      <DependentUpon>UCCutUndrsNestingSelectionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CutUndrsNesting\UCUndrElement.resx">
+      <DependentUpon>UCUndrElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CutUndrsNesting\UCCutElement.resx">
+      <DependentUpon>UCCutElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog Boxes\NewBlankProjectWarning.resx">
+      <DependentUpon>NewBlankProjectWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog Boxes\ChooseCompleteLSolution.resx">
+      <DependentUpon>ChooseCompleteLSolution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog Boxes\SaveProjectWarning.resx">
+      <DependentUpon>SaveProjectWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog Boxes\OpenProjectWarning.resx">
+      <DependentUpon>OpenProjectWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog Boxes\NewProjectWarning.resx">
+      <DependentUpon>NewProjectWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog Boxes\ExitProgramWarning.resx">
+      <DependentUpon>ExitProgramWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines and Finishes\Editing Forms\Area Finish Editor\AreaFinishesEditForm.resx">
+      <DependentUpon>AreaFinishesEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines and Finishes\Editing Forms\Field Guide Editor\FieldGuideEditForm.resx">
+      <DependentUpon>FieldGuideEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines and Finishes\Editing Forms\Line Finish Editor\LineFinishesEditForm.resx">
+      <DependentUpon>LineFinishesEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines and Finishes\Editing Forms\Area Finish Editor\UCAreaFinishEditFormElement.resx">
+      <DependentUpon>UCAreaFinishEditFormElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines and Finishes\Editing Forms\Seam Finish Editor\SeamFinishesEditForm.resx">
+      <DependentUpon>SeamFinishesEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines and Finishes\Supporting Controls\UCCustomColorPallet.resx">
+      <DependentUpon>UCCustomColorPallet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines and Finishes\Supporting Controls\UCCustomDashType.resx">
+      <DependentUpon>UCCustomDashType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines and Finishes\Supporting Controls\UCCustomPatternPallet.resx">
+      <DependentUpon>UCCustomPatternPallet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines and Finishes\Supporting Controls\UCDashTypeListElement.resx">
+      <DependentUpon>UCDashTypeListElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines and Finishes\Editing Forms\Line Finish Editor\UCLineFinishEditFormElement.resx">
+      <DependentUpon>UCLineFinishEditFormElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines and Finishes\Supporting Controls\UCLineWidth.resx">
+      <DependentUpon>UCLineWidth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines and Finishes\Supporting Controls\UCSeamListElement.resx">
+      <DependentUpon>UCSeamListElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overs Unders Form\ExportReportForm.resx">
+      <DependentUpon>ExportReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overs Unders Form\OversUndersForm2.resx">
+      <DependentUpon>OversUndersForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overs Unders Form\UCCutsExtraFormElement.resx">
+      <DependentUpon>UCCutsExtraFormElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overs Unders Form\UCOversOversUndersFormElement.resx">
+      <DependentUpon>UCOversOversUndersFormElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overs Unders Form\UCRptsElement.resx">
+      <DependentUpon>UCRptsElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overs Unders Form\UCSmallFillElement.resx">
+      <DependentUpon>UCSmallFillElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overs Unders Form\UCVirtualCutsOversUndersFormElement.resx">
+      <DependentUpon>UCVirtualCutsOversUndersFormElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overs Unders Form\UCFillSummaryElement.resx">
+      <DependentUpon>UCFillSummaryElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overs Unders Form\UCVirtualUndrsOversUndersFormElement.resx">
+      <DependentUpon>UCVirtualUndrsOversUndersFormElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overs Unders Form\UCVirtualOversOversUndersFormElement.resx">
+      <DependentUpon>UCVirtualOversOversUndersFormElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overs Unders Form\UCUndrsOversUndersFormElement .resx">
+      <DependentUpon>UCUndrsOversUndersFormElement .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overs Unders Form\UCCutsOversUndersFormElement.resx">
+      <DependentUpon>UCCutsOversUndersFormElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overs Unders Form\UCOversUndersFormElement.resx">
+      <DependentUpon>UCOversUndersFormElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Overs Unders Form\UndersNestingForm.resx">
+      <DependentUpon>UndersNestingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project Import and Export\ProgressReporter.resx">
+      <DependentUpon>ProgressReporter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project Import and Export\ProgressReporterForm.resx">
+      <DependentUpon>ProgressReporterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines and Finishes\Editing Forms\LineEditSettings.resx">
+      <DependentUpon>LineEditSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines and Finishes\Editing Forms\AreaEditSettings.resx">
+      <DependentUpon>AreaEditSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lines and Finishes\Editing Forms\ExamplePolygon.resx">
+      <DependentUpon>ExamplePolygon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supporting Forms and Controls\CustomZoom.resx">
+      <DependentUpon>CustomZoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supporting Forms and Controls\LineFilter.resx">
+      <DependentUpon>LineFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supporting Forms and Controls\RedoSeamingInquiryForm.resx">
+      <DependentUpon>RedoSeamingInquiryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDrawColor.resx">
+      <DependentUpon>UCDrawColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCGroupElement.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UCGroupElement1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Data\Defaults\finishes.ini" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Resources\MeasuringStick60.vss">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MeasuringStick66.vss">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MeasuringStick12.vss" />
+    <EmbeddedResource Include="Resources\MeasuringStick125.vss" />
+    <EmbeddedResource Include="Resources\MeasuringStick12-blue.vss" />
+    <EmbeddedResource Include="Resources\MeasuringStick125-blue.vss" />
+    <EmbeddedResource Include="Resources\MeasuringStick60-blue.vss" />
+    <EmbeddedResource Include="Resources\MeasuringStick66-blue.vss" />
+    <EmbeddedResource Include="Resources\MeasuringStick12-green.vss" />
+    <EmbeddedResource Include="Resources\MeasuringStick125-green.vss" />
+    <EmbeddedResource Include="Resources\MeasuringStick60-green.vss" />
+    <EmbeddedResource Include="Resources\MeasuringStick66-green.vss" />
+    <EmbeddedResource Include="Resources\MeasuringStick12-black.vss" />
+    <EmbeddedResource Include="Resources\MeasuringStick125-black.vss" />
+    <EmbeddedResource Include="Resources\MeasuringStick60-black.vss" />
+    <EmbeddedResource Include="Resources\MeasuringStick66-black.vss" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CanvasLib\CanvasLib.csproj">
+      <Project>{cb086504-fa9c-404f-9c24-5b73d9a224b8}</Project>
+      <Name>CanvasLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CanvasManager\CanvasManagerLib.csproj">
+      <Project>{5c42a79a-d44a-413f-90ad-ba61e35f17bd}</Project>
+      <Name>CanvasManagerLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComboLib\ComboLib.csproj">
+      <Project>{4d289ab6-a3cc-4885-8185-2d2fc473b053}</Project>
+      <Name>ComboLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CutOversNestingLib\CutUndrsNestingLib.csproj">
+      <Project>{e37edd11-7e2b-4ca1-b2c5-f5b7644d9363}</Project>
+      <Name>CutUndrsNestingLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DebugSupport\DebugSupport.csproj">
+      <Project>{e5771a72-0698-43be-a1ed-7e2525dcd6c0}</Project>
+      <Name>DebugSupport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FinishesLib\FinishesLib.csproj">
+      <Project>{70134c95-ba50-49d3-8fde-6df3a4deafdf}</Project>
+      <Name>FinishesLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Geometry\Geometry.csproj">
+      <Project>{b0c68da5-8d2c-43e1-843a-0fa0685e0731}</Project>
+      <Name>Geometry</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Globals\Globals.csproj">
+      <Project>{778b112c-93a6-4bd4-b171-04e362ddd126}</Project>
+      <Name>Globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Graphics\Graphics.csproj">
+      <Project>{3aaf1aca-1e72-4bb3-a276-b9609039d71d}</Project>
+      <Name>Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MaterialsLayout\MaterialsLayout.csproj">
+      <Project>{dd9d024e-4979-43dc-a9b9-05f4fdc258d9}</Project>
+      <Name>MaterialsLayout</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OversUndersLib\OversUndersLib.csproj">
+      <Project>{59cbbbef-522d-4bcb-b134-0ce9333295fd}</Project>
+      <Name>OversUndersLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OversUnders\OversUnders.csproj">
+      <Project>{885f6c18-aa17-48c2-a45d-3a3a1ba46ea8}</Project>
+      <Name>OversUnders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PaletteLib\PaletteLib.csproj">
+      <Project>{bea029ba-8512-4f8e-899b-0081cf9157be}</Project>
+      <Name>PaletteLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SettingsAndShortcuts\SettingsLib.csproj">
+      <Project>{e7857c01-05b8-49ae-b811-e7041606bfd5}</Project>
+      <Name>SettingsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShapeNestLib\ShapeNestLib.csproj">
+      <Project>{67648cd9-6389-43b4-bb6c-1d758626f2d6}</Project>
+      <Name>ShapeNestLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StatsGeneratorLib\StatsGeneratorLib.csproj">
+      <Project>{94cee069-a635-4632-9afb-4057e0c48cd9}</Project>
+      <Name>StatsGeneratorLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SummaryReport\SummaryReport.csproj">
+      <Project>{c4390266-8cb8-4171-a467-c17ba014b6ee}</Project>
+      <Name>SummaryReport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TracerLib\TracerLib.csproj">
+      <Project>{53183650-381b-4edc-8f0a-4b9b244b111c}</Project>
+      <Name>TracerLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{0d4ef8be-d883-44c7-bf1b-7ad6bce7e890}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Defaults\AreaFinishInit.xml" />
+    <Content Include="Data\Defaults\LineFinishInit.xml" />
+    <Content Include="Data\Defaults\SeamLineFinishInit.xml" />
+    <Content Include="Data\Defaults\ToolTipDefaults.xml" />
+    <Content Include="Img\lockIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\SeamAreaLockedPicture.png" />
+    <Content Include="TODO.txt" />
+    <Content Include="Data\Drawings\Drawing1.png" />
+    <Content Include="Data\Drawings\LineTest.png" />
+    <Content Include="icon.ico" />
+    <Content Include="Img\aligntogrid16.png" />
+    <Content Include="Img\aligntogrid32.png" />
+    <Content Include="Img\aligntogrid64.png" />
+    <Content Include="Img\allicons_1.png" />
+    <Content Include="Img\areaeditsettings16.png" />
+    <Content Include="Img\areaeditsettings32.png" />
+    <Content Include="Img\areaeditsettings64.png" />
+    <Content Include="Img\areamode16.png" />
+    <Content Include="Img\areamode32.png" />
+    <Content Include="Img\areamode64.png" />
+    <Content Include="Img\areasettings16.png" />
+    <Content Include="Img\areasettings32.png" />
+    <Content Include="Img\areasettings64.png" />
+    <Content Include="Img\cancelicon48.png" />
+    <Content Include="Img\counters16.png" />
+    <Content Include="Img\counters32.png" />
+    <Content Include="Img\counters64.png" />
+    <Content Include="Img\customscale16.png" />
+    <Content Include="Img\customscale32.png" />
+    <Content Include="Img\customscale64.png" />
+    <Content Include="Img\dashDotLine.png" />
+    <Content Include="Img\dashLine.png" />
+    <Content Include="Img\dotLine.png" />
+    <Content Include="Img\doubleline.png" />
+    <Content Include="Img\drawmode16.png" />
+    <Content Include="Img\drawmode32.png" />
+    <Content Include="Img\drawmode64.png" />
+    <Content Include="Img\editarea16.png" />
+    <Content Include="Img\editarea32.png" />
+    <Content Include="Img\editarea64.png" />
+    <Content Include="Img\editlines16.png" />
+    <Content Include="Img\editlines32.png" />
+    <Content Include="Img\editlines64.png" />
+    <Content Include="Img\filterareas16.png" />
+    <Content Include="Img\filterareas32.png" />
+    <Content Include="Img\filterareas64.png" />
+    <Content Include="Img\filterlines16.png" />
+    <Content Include="Img\filterlines32.png" />
+    <Content Include="Img\filterlines64.png" />
+    <Content Include="Img\fitheight16.png" />
+    <Content Include="Img\fitheight32.png" />
+    <Content Include="Img\fitheight64.png" />
+    <Content Include="Img\fitwidth16.png" />
+    <Content Include="Img\fitwidth32.png" />
+    <Content Include="Img\fitwidth64.png" />
+    <Content Include="Img\greyareas16.png" />
+    <Content Include="Img\greyareas32.png" />
+    <Content Include="Img\greyareas64.png" />
+    <Content Include="Img\hideareas16.png" />
+    <Content Include="Img\hideareas32.png" />
+    <Content Include="Img\hideareas64.png" />
+    <Content Include="Img\hideimage16.png" />
+    <Content Include="Img\hideimage32.png" />
+    <Content Include="Img\hideimage64.png" />
+    <Content Include="Img\hidesettings16.png" />
+    <Content Include="Img\hidesettings32.png" />
+    <Content Include="Img\hidesettings64.png" />
+    <Content Include="Img\icon.ico" />
+    <Content Include="Img\icon.png" />
+    <Content Include="Img\icon64centered.png" />
+    <Content Include="Img\lineeditsettings16.png" />
+    <Content Include="Img\lineeditsettings32.png" />
+    <Content Include="Img\lineeditsettings64.png" />
+    <Content Include="Img\linemode16.png" />
+    <Content Include="Img\linemode32.png" />
+    <Content Include="Img\linemode64.png" />
+    <Content Include="Img\linesettings16.png" />
+    <Content Include="Img\linesettings32.png" />
+    <Content Include="Img\linesettings64.png" />
+    <Content Include="Img\measureline16.png" />
+    <Content Include="Img\measureline32.png" />
+    <Content Include="Img\measureline64.png" />
+    <Content Include="Img\MeasuringStickFullImage.png" />
+    <Content Include="Img\new.png" />
+    <Content Include="Img\new16.png" />
+    <Content Include="Img\new32.png" />
+    <Content Include="Img\new64.png" />
+    <Content Include="Img\okicon48.png" />
+    <Content Include="Img\open.png" />
+    <Content Include="Img\open16.png" />
+    <Content Include="Img\open32.png" />
+    <Content Include="Img\open64.png" />
+    <Content Include="Img\panmode16.png" />
+    <Content Include="Img\panmode32.png" />
+    <Content Include="Img\panmode64.png" />
+    <Content Include="Img\pdf16.png" />
+    <Content Include="Img\pdf32.png" />
+    <Content Include="Img\pdf64.png" />
+    <Content Include="Img\save16.png" />
+    <Content Include="Img\save32.png" />
+    <Content Include="Img\save64.png" />
+    <Content Include="Img\save64as.png" />
+    <Content Include="Img\saveas16.png" />
+    <Content Include="Img\saveas32.png" />
+    <Content Include="Img\seamsettings16.png" />
+    <Content Include="Img\seamsettings32.png" />
+    <Content Include="Img\seamsettings64.png" />
+    <Content Include="Img\selectcolors16.png" />
+    <Content Include="Img\selectcolors32.png" />
+    <Content Include="Img\selectcolors64.png" />
+    <Content Include="Img\showareas16.png" />
+    <Content Include="Img\showareas32.png" />
+    <Content Include="Img\showareas64.png" />
+    <Content Include="Img\showimage16.png" />
+    <Content Include="Img\showimage32.png" />
+    <Content Include="Img\showimage64.png" />
+    <Content Include="Img\showsettings16.png" />
+    <Content Include="Img\showsettings32.png" />
+    <Content Include="Img\showsettings64.png" />
+    <Content Include="Img\singleline.png" />
+    <Content Include="Img\solidLine.png" />
+    <Content Include="Img\splash.jpg" />
+    <Content Include="Img\zoomin16.png" />
+    <Content Include="Img\zoomin32.png" />
+    <Content Include="Img\zoomin64.png" />
+    <Content Include="Img\zoomout16.png" />
+    <Content Include="Img\zoomout32.png" />
+    <Content Include="Img\zoomout64.png" />
+    <Content Include="Img\zoompercent16.png" />
+    <Content Include="Img\zoompercent32.png" />
+    <Content Include="Img\zoompercent64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Logs\" />
+    <Folder Include="Data\Projects\" />
+    <Folder Include="Lines and Finishes\Palettes And Related Controls\Area Finishes Palette\" />
+    <Folder Include="Lines and Finishes\Palettes And Related Controls\Line Finishes Palette\" />
+    <Folder Include="Lines and Finishes\Palettes And Related Controls\Seams Palette\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMicrosoft.Office.Interop.VisOcx">
+      <Guid>{F1A8DFE4-BC61-48BA-AFDA-96DF10247AF0}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
