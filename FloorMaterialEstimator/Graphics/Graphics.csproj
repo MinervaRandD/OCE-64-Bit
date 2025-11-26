@@ -24,6 +24,7 @@
     <DefineConstants>TRACE;DEBUG;UsingVisio</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -72,10 +73,13 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Office.Interop.Visio, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+    <Reference Include="AxInterop.Microsoft.Office.Interop.VisOcx">
+      <HintPath>..\..\..\..\OCERev4\FloorMaterialEstimator\References\AxInterop.Microsoft.Office.Interop.VisOcx.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.VisOcx, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>..\References\Microsoft.Office.Interop.Visio.dll</HintPath>
+      <HintPath>..\..\..\..\OCERev4\FloorMaterialEstimator\References\Microsoft.Office.Interop.VisOcx.dll</HintPath>
     </Reference>
     <Reference Include="NetTopologySuite, Version=2.0.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
       <HintPath>..\packages\NetTopologySuite.2.5.0\lib\netstandard2.0\NetTopologySuite.dll</HintPath>
@@ -105,6 +109,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Graphic Circle\GraphicCircle.cs" />
     <Compile Include="Debug Support\GraphicsDebugSupportRoutines.cs" />
     <Compile Include="Graphics Layer\GraphicsLayerBase.cs" />
@@ -185,13 +195,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="AxMicrosoft.Office.Interop.VisOcx">
-      <Guid>{F1A8DFE4-BC61-48BA-AFDA-96DF10247AF0}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>4</VersionMinor>
+    <COMReference Include="Microsoft.Office.Interop.Visio">
+      <Guid>{00021A98-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>16</VersionMinor>
       <Lcid>0</Lcid>
-      <WrapperTool>aximp</WrapperTool>
+      <WrapperTool>primary</WrapperTool>
       <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
     <COMReference Include="stdole">
       <Guid>{00020430-0000-0000-C000-000000000046}</Guid>

@@ -1,0 +1,30 @@
+<Project Sdk="WixToolset.Sdk/4.0.0">
+
+  <PropertyGroup>
+    <!-- Build an MSI package -->
+    <OutputType>Package</OutputType>
+    <!-- Target architecture (your app is x64) -->
+    <Platform>x64</Platform>
+
+    <!-- Where your compiled EXE/DLLs live -->
+    <!-- Adjust if your solution path is different -->
+    <DefineConstants>
+      SourceDir=$(MSBuildProjectDirectory)\..\OCEFloorEstimator\bin\Release\
+    </DefineConstants>
+
+    <!-- Optional: output path for the MSI -->
+    <OutputPath>$(MSBuildProjectDirectory)\bin\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- All your .wxs source files -->
+    <Compile Include="Package.wxs" />
+    <Compile Include="Folders.wxs" />
+    <Compile Include="Shortcuts.wxs" />
+    <Compile Include="Requirements.wxs" />
+    <Compile Include="Components.wxs" />
+  </ItemGroup>
+
+  <!-- If you later add icons or other resources, you can add them here -->
+
+</Project>

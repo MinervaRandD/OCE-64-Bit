@@ -1,0 +1,22 @@
+<!-- Folders.wxs -->
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+
+    <!-- 64-bit Program Files root -->
+    <StandardDirectory Id="ProgramFiles6432Folder">
+      <Directory Id="COMPANYFOLDER" Name="Minerva Research and Development, LLC">
+        <Directory Id="INSTALLFOLDER" Name="OCE Floor Materials Estimator" />
+      </Directory>
+    </StandardDirectory>
+
+    <!-- Desktop -->
+    <StandardDirectory Id="DesktopFolder" />
+
+    <!-- Start Menu folder for the app -->
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="ApplicationProgramsFolder"
+                 Name="OCE Floor Materials Estimator" />
+    </StandardDirectory>
+
+  </Fragment>
+</Wix>

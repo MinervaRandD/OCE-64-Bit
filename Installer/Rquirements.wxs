@@ -1,0 +1,37 @@
+<!-- Requirements.wxs -->
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:util="http://wixtoolset.org/schemas/v4/wxs/util">
+  <Fragment>
+
+    <!-- Office 64-bit bitness (example using Word key) -->
+    <util:RegistrySearch
+      Id="OfficeBitnessSearch"
+      Root="HKLM"
+      Key="SOFTWARE\Microsoft\Office\16.0\Word"
+      Value="Bitness"
+      Result="value"
+      Variable="OfficeBitness"
+      Bitness="always64" />
+
+    <!-- Visio 64-bit bitness -->
+    <util:RegistrySearch
+      Id="VisioBitnessSearch"
+      Root="HKLM"
+      Key="SOFTWARE\Microsoft\Office\16.0\Visio"
+      Value="Bitness"
+      Result="value"
+      Variable="VisioBitness"
+      Bitness="always64" />
+
+    <!-- Office 365 Click-to-Run presence -->
+    <util:RegistrySearch
+      Id="OfficeC2RConfig"
+      Root="HKLM"
+      Key="SOFTWARE\Microsoft\Office\ClickToRun\Configuration"
+      Value="ClientVersionToReport"
+      Result="value"
+      Variable="OfficeC2RVersion"
+      Bitness="always64" />
+
+  </Fragment>
+</Wix>

@@ -1,0 +1,48 @@
+<!-- Shortcuts.wxs -->
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+
+    <!-- Shortcuts component lives in the install folder -->
+    <DirectoryRef Id="INSTALLFOLDER">
+      <Component
+        Id="OCEFME_Shortcuts"
+        Guid="PUT-GUID-FOR-SHORTCUTS-HERE">
+
+        <!-- Desktop shortcut -->
+        <Shortcut
+          Id="OCEFME_DesktopShortcut"
+          Name="OCE Floor Materials Estimator"
+          Description="OCE Floor Materials Estimator"
+          Target="[INSTALLFOLDER]FloorMaterialEstimator.exe"
+          WorkingDirectory="INSTALLFOLDER"
+          Directory="DesktopFolder" />
+
+        <!-- Start Menu shortcut -->
+        <Shortcut
+          Id="OCEFME_StartMenuShortcut"
+          Name="OCE Floor Materials Estimator"
+          Description="OCE Floor Materials Estimator"
+          Target="[INSTALLFOLDER]FloorMaterialEstimator.exe"
+          WorkingDirectory="INSTALLFOLDER"
+          Directory="ApplicationProgramsFolder" />
+
+        <!-- Clean up Start Menu folder on uninstall -->
+        <RemoveFolder
+          Id="OCEFME_RemoveStartMenuFolder"
+          Directory="ApplicationProgramsFolder"
+          On="uninstall" />
+
+        <!-- A dummy registry value used as KeyPath for the shortcuts component -->
+        <RegistryValue
+          Root="HKCU"
+          Key="Software\Minerva Research and Development, LLC\OCE Floor Materials Estimator"
+          Name="installed"
+          Type="integer"
+          Value="1"
+          KeyPath="yes" />
+
+      </Component>
+    </DirectoryRef>
+
+  </Fragment>
+</Wix>

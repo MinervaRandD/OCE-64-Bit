@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <DirectoryRef Id="INSTALLFOLDER">
+      <Component Id="Cmp_AxInterop_Microsoft_Office_Interop_VisOcx_dll" Guid="93939a6a-44fa-468a-b26f-9fa39adb58c4">
+        <File Id="Fil_AxInterop_Microsoft_Office_Interop_VisOcx_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\AxInterop.Microsoft.Office.Interop.VisOcx.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_CanvasLib_dll" Guid="eb44e30d-31c5-41da-9c77-840ec0539eb5">
+        <File Id="Fil_CanvasLib_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\CanvasLib.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_CanvasLib_pdb" Guid="041724c0-0370-4238-92ec-4d8f86ac19f7">
+        <File Id="Fil_CanvasLib_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\CanvasLib.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_CanvasManager_dll" Guid="5c688000-abbc-4132-bfcf-6b1c04f170cc">
+        <File Id="Fil_CanvasManager_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\CanvasManager.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_CanvasManager_pdb" Guid="bb8c1448-010f-4418-a72d-bb17d943f2d6">
+        <File Id="Fil_CanvasManager_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\CanvasManager.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_clipper_library_dll" Guid="a009d3b2-c761-48cb-86d7-8d6cb456a314">
+        <File Id="Fil_clipper_library_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\clipper_library.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_clipper_library_pdb" Guid="d0566ad2-224c-4f72-a8ed-2edc797c8faf">
+        <File Id="Fil_clipper_library_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\clipper_library.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_ComboLib_dll" Guid="807014e8-97ae-4089-9f89-7584057fda87">
+        <File Id="Fil_ComboLib_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\ComboLib.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_ComboLib_pdb" Guid="1ba4c2e7-470e-418f-b2dd-00803c89d33a">
+        <File Id="Fil_ComboLib_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\ComboLib.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_CutOversNestingLib_dll" Guid="e553b1c9-8dc5-4521-900b-fc12ee1b6fd3">
+        <File Id="Fil_CutOversNestingLib_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\CutOversNestingLib.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_CutOversNestingLib_pdb" Guid="b5f18ea4-3740-4759-93d8-94160e5e5b40">
+        <File Id="Fil_CutOversNestingLib_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\CutOversNestingLib.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_DebugSupport_dll" Guid="4d2c14e8-f204-4741-b5e2-5bf83bc4adab">
+        <File Id="Fil_DebugSupport_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\DebugSupport.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_DebugSupport_dll_config" Guid="dcb1b8f4-0278-4dff-b10b-cb55d51b8247">
+        <File Id="Fil_DebugSupport_dll_config"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\DebugSupport.dll.config"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_DebugSupport_pdb" Guid="0f9cec20-7522-451c-bc6d-d1ebc49df7e7">
+        <File Id="Fil_DebugSupport_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\DebugSupport.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_DeepNestLib_dll" Guid="048eea29-5752-42fc-b36c-3cac8212a9ed">
+        <File Id="Fil_DeepNestLib_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\DeepNestLib.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_DeepNestLib_pdb" Guid="6df86a5b-8654-479e-a5d6-60648f236bcf">
+        <File Id="Fil_DeepNestLib_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\DeepNestLib.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_FinishesLib_dll" Guid="d56e4889-7063-4e65-9fd2-cc43d6e6907b">
+        <File Id="Fil_FinishesLib_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\FinishesLib.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_FinishesLib_pdb" Guid="19008839-6a62-4e44-a463-d94b0149e9f1">
+        <File Id="Fil_FinishesLib_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\FinishesLib.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_FloorMaterialEstimator_exe" Guid="0743fd60-3e60-4cad-b6cf-f816ec5041dd">
+        <File Id="Fil_FloorMaterialEstimator_exe"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\FloorMaterialEstimator.exe"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_FloorMaterialEstimator_exe_config" Guid="5d859148-1cbd-4971-bdd9-3611e48dd3a3">
+        <File Id="Fil_FloorMaterialEstimator_exe_config"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\FloorMaterialEstimator.exe.config"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_FloorMaterialEstimator_pdb" Guid="594f00a0-150e-44dc-8f41-5287022c3b2c">
+        <File Id="Fil_FloorMaterialEstimator_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\FloorMaterialEstimator.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_Geometry_dll" Guid="b996e3d1-3657-41a0-969d-392acce2667c">
+        <File Id="Fil_Geometry_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\Geometry.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_Geometry_pdb" Guid="ba8ab9c1-524b-4232-a094-ede5a380e89f">
+        <File Id="Fil_Geometry_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\Geometry.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_Globals_dll" Guid="c57f2a4f-0b37-4651-98c5-e7228c542fd6">
+        <File Id="Fil_Globals_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\Globals.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_Globals_pdb" Guid="ce84c6a5-8ce5-4af6-b017-9c9b38869abd">
+        <File Id="Fil_Globals_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\Globals.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_Graphics_dll" Guid="40ce2e85-259f-4453-bff1-8d32801ebff7">
+        <File Id="Fil_Graphics_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\Graphics.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_Graphics_dll_config" Guid="74e101dc-29fd-4bb2-8bd6-9a52c56f0339">
+        <File Id="Fil_Graphics_dll_config"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\Graphics.dll.config"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_Graphics_pdb" Guid="fb4c951c-420b-4b8d-8c9e-220f4abd7409">
+        <File Id="Fil_Graphics_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\Graphics.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_IxMilia_Dxf_dll" Guid="c89c0fed-fe6b-4586-acaf-9e8c8dc0fb69">
+        <File Id="Fil_IxMilia_Dxf_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\IxMilia.Dxf.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MaterialsLayout_dll" Guid="90128cc6-01ec-4d4b-9c0b-116102836651">
+        <File Id="Fil_MaterialsLayout_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MaterialsLayout.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MaterialsLayout_pdb" Guid="bc60d46a-9186-43da-aaa1-bbb569aa5145">
+        <File Id="Fil_MaterialsLayout_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MaterialsLayout.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick12_black_vss" Guid="006a9bbe-e97f-4602-8676-b0983733685d">
+        <File Id="Fil_MeasuringStick12_black_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick12-black.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick12_blue_vss" Guid="8e41f4f7-b331-4e03-8cf5-94331c07b78a">
+        <File Id="Fil_MeasuringStick12_blue_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick12-blue.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick12_green_vss" Guid="bb692ce9-463d-44c8-a308-9ed1de559b7c">
+        <File Id="Fil_MeasuringStick12_green_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick12-green.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick12_vss" Guid="dfe114e4-1ff2-422e-9134-dd407641f2a6">
+        <File Id="Fil_MeasuringStick12_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick12.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick125_black_vss" Guid="0f608854-2b91-4563-aecc-d3813854b27b">
+        <File Id="Fil_MeasuringStick125_black_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick125-black.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick125_blue_vss" Guid="3f9a6bf6-1359-4bff-a7b4-979e739cb1ea">
+        <File Id="Fil_MeasuringStick125_blue_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick125-blue.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick125_green_vss" Guid="43580fb5-79f9-4085-bf18-03a1a639b8b6">
+        <File Id="Fil_MeasuringStick125_green_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick125-green.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick125_vss" Guid="a916bb15-31c1-46c9-8fb8-3ddac8d56833">
+        <File Id="Fil_MeasuringStick125_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick125.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick60_black_vss" Guid="f847570c-b9c9-4fc6-a966-60c67dae2f02">
+        <File Id="Fil_MeasuringStick60_black_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick60-black.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick60_blue_vss" Guid="9a6d6f12-bde3-41cf-81b5-b7b6e3ff3aa3">
+        <File Id="Fil_MeasuringStick60_blue_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick60-blue.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick60_green_vss" Guid="a81040a6-b961-4cfb-8006-38547a41dfe0">
+        <File Id="Fil_MeasuringStick60_green_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick60-green.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick60_vss" Guid="452f9830-55e9-4219-ad42-911a2bf34526">
+        <File Id="Fil_MeasuringStick60_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick60.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick66_black_vss" Guid="03203b64-3636-4e14-be12-c3f32c054bec">
+        <File Id="Fil_MeasuringStick66_black_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick66-black.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick66_blue_vss" Guid="9e4f1e62-f1d2-4b5b-827f-b287ee948dd3">
+        <File Id="Fil_MeasuringStick66_blue_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick66-blue.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick66_green_vss" Guid="6de54ad5-524f-4b9f-b4aa-e3067faccd9e">
+        <File Id="Fil_MeasuringStick66_green_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick66-green.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MeasuringStick66_vss" Guid="af24a4bb-fbe1-4f98-aebb-4745f08456d6">
+        <File Id="Fil_MeasuringStick66_vss"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MeasuringStick66.vss"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_MinkowskiWrapper_dll" Guid="6d7afbca-f888-4bc3-be6a-a565116b549e">
+        <File Id="Fil_MinkowskiWrapper_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\MinkowskiWrapper.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_NetTopologySuite_dll" Guid="ff70e78c-eae1-4e92-ab78-8f5316698ebc">
+        <File Id="Fil_NetTopologySuite_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\NetTopologySuite.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_NetTopologySuite_xml" Guid="7d0e85e5-001c-4a5d-bb92-1f2069f503e6">
+        <File Id="Fil_NetTopologySuite_xml"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\NetTopologySuite.xml"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_OversUndersLib_dll" Guid="590023a0-1f15-44c8-9130-fa3651f42bec">
+        <File Id="Fil_OversUndersLib_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\OversUndersLib.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_OversUndersLib_pdb" Guid="a39774c5-b1c9-47a9-935b-ce843dae3aae">
+        <File Id="Fil_OversUndersLib_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\OversUndersLib.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_OversUndersMartin_dll" Guid="3f193b96-a94a-4c7b-888f-c73ae70dd44e">
+        <File Id="Fil_OversUndersMartin_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\OversUndersMartin.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_OversUndersMartin_pdb" Guid="8a963d5f-2b62-4f52-be6f-20f4bf3e644f">
+        <File Id="Fil_OversUndersMartin_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\OversUndersMartin.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_PaletteLib_dll" Guid="11bfe6a2-cf20-4612-aeba-414fcdd3cb50">
+        <File Id="Fil_PaletteLib_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\PaletteLib.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_PaletteLib_pdb" Guid="399f859c-9ab1-4a38-ae6a-900304075c46">
+        <File Id="Fil_PaletteLib_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\PaletteLib.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_SettingsAndShortcuts_dll" Guid="fd860e74-7898-4bb4-9e6d-b725f671c8f9">
+        <File Id="Fil_SettingsAndShortcuts_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\SettingsAndShortcuts.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_SettingsAndShortcuts_pdb" Guid="b5a72c52-b81a-4185-9079-01327742739c">
+        <File Id="Fil_SettingsAndShortcuts_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\SettingsAndShortcuts.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_ShapeNestLib_dll" Guid="d23d2213-6c6c-4191-94ec-97047509650c">
+        <File Id="Fil_ShapeNestLib_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\ShapeNestLib.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_ShapeNestLib_pdb" Guid="eee228fa-469a-4a29-970b-482305cf70b2">
+        <File Id="Fil_ShapeNestLib_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\ShapeNestLib.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_StatsGeneratorLib_dll" Guid="86abc8a6-409c-4614-9fea-bb52e6efbed7">
+        <File Id="Fil_StatsGeneratorLib_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\StatsGeneratorLib.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_StatsGeneratorLib_pdb" Guid="d888d0c5-3d28-473f-a6be-9e94e016292d">
+        <File Id="Fil_StatsGeneratorLib_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\StatsGeneratorLib.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_SummaryReport_dll" Guid="a7901e6b-5fe6-4afe-96bd-cd143d8cd61a">
+        <File Id="Fil_SummaryReport_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\SummaryReport.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_SummaryReport_pdb" Guid="74caf75f-04ab-4bb7-8f5e-eadccfa3ff2b">
+        <File Id="Fil_SummaryReport_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\SummaryReport.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_Syncfusion_Shared_Base_dll" Guid="5241d7bf-d911-41fe-b8bd-48d721b46862">
+        <File Id="Fil_Syncfusion_Shared_Base_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\Syncfusion.Shared.Base.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_System_Buffers_dll" Guid="8268aeab-b55b-456c-bd0d-0fdb3609e457">
+        <File Id="Fil_System_Buffers_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\System.Buffers.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_System_Buffers_xml" Guid="950e3aac-fe02-4301-8dc2-1ef1327685af">
+        <File Id="Fil_System_Buffers_xml"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\System.Buffers.xml"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_System_Memory_dll" Guid="a2ba2c52-b809-4184-9af7-e911983ed362">
+        <File Id="Fil_System_Memory_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\System.Memory.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_System_Memory_xml" Guid="df70752a-6bb4-45f3-8ee9-b0d844e2eb49">
+        <File Id="Fil_System_Memory_xml"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\System.Memory.xml"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_System_Numerics_Vectors_dll" Guid="f57839fb-8966-4154-8ba8-f689671eae9f">
+        <File Id="Fil_System_Numerics_Vectors_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\System.Numerics.Vectors.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_System_Numerics_Vectors_xml" Guid="809f087e-e8b9-4a57-8af5-7d0c0c0fb166">
+        <File Id="Fil_System_Numerics_Vectors_xml"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\System.Numerics.Vectors.xml"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_System_Runtime_CompilerServices_Unsafe_dll" Guid="115a9242-fbd8-4849-8080-b283c91dfa90">
+        <File Id="Fil_System_Runtime_CompilerServices_Unsafe_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_System_Runtime_CompilerServices_Unsafe_xml" Guid="e11356f4-78ed-4d38-8b87-65c93a9be59c">
+        <File Id="Fil_System_Runtime_CompilerServices_Unsafe_xml"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_TracerLib_dll" Guid="bad626a4-9061-49cb-bc4d-7a5410c33718">
+        <File Id="Fil_TracerLib_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\TracerLib.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_TracerLib_pdb" Guid="f36881f7-1b21-4b1b-872f-db4ee9400d06">
+        <File Id="Fil_TracerLib_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\TracerLib.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_Utilities_dll" Guid="7c58e9fe-629f-4974-bf45-9fc51136a164">
+        <File Id="Fil_Utilities_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\Utilities.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_Utilities_dll_config" Guid="48aa4fb2-98ae-47d5-8177-dc29aa4e4580">
+        <File Id="Fil_Utilities_dll_config"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\Utilities.dll.config"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_Utilities_pdb" Guid="a363a44d-cf70-4fcf-b593-962f36b07d72">
+        <File Id="Fil_Utilities_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\Utilities.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_VectorLib_dll" Guid="715e7c76-2fb6-4469-a798-78ca2b2be87f">
+        <File Id="Fil_VectorLib_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\VectorLib.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_VectorLib_pdb" Guid="26f22887-f543-4973-8ed9-1f9571a7a292">
+        <File Id="Fil_VectorLib_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\VectorLib.pdb"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_VoronoiLib_dll" Guid="74764cb4-13c7-4efc-be45-bcf22cfdcca6">
+        <File Id="Fil_VoronoiLib_dll"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\VoronoiLib.dll"
+              KeyPath="yes" />
+      </Component>      <Component Id="Cmp_VoronoiLib_pdb" Guid="9e81b2b6-94ac-4a0a-bf88-94a67b8f0bd0">
+        <File Id="Fil_VoronoiLib_pdb"
+              Source="C:\Minerva Research and Development\Projects\OCE-64-Bit\FloorMaterialEstimator\FloorMaterialEstimatorRev2\bin\x64\Debug\VoronoiLib.pdb"
+              KeyPath="yes" />
+      </Component>    </DirectoryRef>
+
+    <ComponentGroup Id="OCEFME_Components">
+      <ComponentRef Id="Cmp_AxInterop_Microsoft_Office_Interop_VisOcx_dll" />
+      <ComponentRef Id="Cmp_CanvasLib_dll" />
+      <ComponentRef Id="Cmp_CanvasLib_pdb" />
+      <ComponentRef Id="Cmp_CanvasManager_dll" />
+      <ComponentRef Id="Cmp_CanvasManager_pdb" />
+      <ComponentRef Id="Cmp_clipper_library_dll" />
+      <ComponentRef Id="Cmp_clipper_library_pdb" />
+      <ComponentRef Id="Cmp_ComboLib_dll" />
+      <ComponentRef Id="Cmp_ComboLib_pdb" />
+      <ComponentRef Id="Cmp_CutOversNestingLib_dll" />
+      <ComponentRef Id="Cmp_CutOversNestingLib_pdb" />
+      <ComponentRef Id="Cmp_DebugSupport_dll" />
+      <ComponentRef Id="Cmp_DebugSupport_dll_config" />
+      <ComponentRef Id="Cmp_DebugSupport_pdb" />
+      <ComponentRef Id="Cmp_DeepNestLib_dll" />
+      <ComponentRef Id="Cmp_DeepNestLib_pdb" />
+      <ComponentRef Id="Cmp_FinishesLib_dll" />
+      <ComponentRef Id="Cmp_FinishesLib_pdb" />
+      <ComponentRef Id="Cmp_FloorMaterialEstimator_exe" />
+      <ComponentRef Id="Cmp_FloorMaterialEstimator_exe_config" />
+      <ComponentRef Id="Cmp_FloorMaterialEstimator_pdb" />
+      <ComponentRef Id="Cmp_Geometry_dll" />
+      <ComponentRef Id="Cmp_Geometry_pdb" />
+      <ComponentRef Id="Cmp_Globals_dll" />
+      <ComponentRef Id="Cmp_Globals_pdb" />
+      <ComponentRef Id="Cmp_Graphics_dll" />
+      <ComponentRef Id="Cmp_Graphics_dll_config" />
+      <ComponentRef Id="Cmp_Graphics_pdb" />
+      <ComponentRef Id="Cmp_IxMilia_Dxf_dll" />
+      <ComponentRef Id="Cmp_MaterialsLayout_dll" />
+      <ComponentRef Id="Cmp_MaterialsLayout_pdb" />
+      <ComponentRef Id="Cmp_MeasuringStick12_black_vss" />
+      <ComponentRef Id="Cmp_MeasuringStick12_blue_vss" />
+      <ComponentRef Id="Cmp_MeasuringStick12_green_vss" />
+      <ComponentRef Id="Cmp_MeasuringStick12_vss" />
+      <ComponentRef Id="Cmp_MeasuringStick125_black_vss" />
+      <ComponentRef Id="Cmp_MeasuringStick125_blue_vss" />
+      <ComponentRef Id="Cmp_MeasuringStick125_green_vss" />
+      <ComponentRef Id="Cmp_MeasuringStick125_vss" />
+      <ComponentRef Id="Cmp_MeasuringStick60_black_vss" />
+      <ComponentRef Id="Cmp_MeasuringStick60_blue_vss" />
+      <ComponentRef Id="Cmp_MeasuringStick60_green_vss" />
+      <ComponentRef Id="Cmp_MeasuringStick60_vss" />
+      <ComponentRef Id="Cmp_MeasuringStick66_black_vss" />
+      <ComponentRef Id="Cmp_MeasuringStick66_blue_vss" />
+      <ComponentRef Id="Cmp_MeasuringStick66_green_vss" />
+      <ComponentRef Id="Cmp_MeasuringStick66_vss" />
+      <ComponentRef Id="Cmp_MinkowskiWrapper_dll" />
+      <ComponentRef Id="Cmp_NetTopologySuite_dll" />
+      <ComponentRef Id="Cmp_NetTopologySuite_xml" />
+      <ComponentRef Id="Cmp_OversUndersLib_dll" />
+      <ComponentRef Id="Cmp_OversUndersLib_pdb" />
+      <ComponentRef Id="Cmp_OversUndersMartin_dll" />
+      <ComponentRef Id="Cmp_OversUndersMartin_pdb" />
+      <ComponentRef Id="Cmp_PaletteLib_dll" />
+      <ComponentRef Id="Cmp_PaletteLib_pdb" />
+      <ComponentRef Id="Cmp_SettingsAndShortcuts_dll" />
+      <ComponentRef Id="Cmp_SettingsAndShortcuts_pdb" />
+      <ComponentRef Id="Cmp_ShapeNestLib_dll" />
+      <ComponentRef Id="Cmp_ShapeNestLib_pdb" />
+      <ComponentRef Id="Cmp_StatsGeneratorLib_dll" />
+      <ComponentRef Id="Cmp_StatsGeneratorLib_pdb" />
+      <ComponentRef Id="Cmp_SummaryReport_dll" />
+      <ComponentRef Id="Cmp_SummaryReport_pdb" />
+      <ComponentRef Id="Cmp_Syncfusion_Shared_Base_dll" />
+      <ComponentRef Id="Cmp_System_Buffers_dll" />
+      <ComponentRef Id="Cmp_System_Buffers_xml" />
+      <ComponentRef Id="Cmp_System_Memory_dll" />
+      <ComponentRef Id="Cmp_System_Memory_xml" />
+      <ComponentRef Id="Cmp_System_Numerics_Vectors_dll" />
+      <ComponentRef Id="Cmp_System_Numerics_Vectors_xml" />
+      <ComponentRef Id="Cmp_System_Runtime_CompilerServices_Unsafe_dll" />
+      <ComponentRef Id="Cmp_System_Runtime_CompilerServices_Unsafe_xml" />
+      <ComponentRef Id="Cmp_TracerLib_dll" />
+      <ComponentRef Id="Cmp_TracerLib_pdb" />
+      <ComponentRef Id="Cmp_Utilities_dll" />
+      <ComponentRef Id="Cmp_Utilities_dll_config" />
+      <ComponentRef Id="Cmp_Utilities_pdb" />
+      <ComponentRef Id="Cmp_VectorLib_dll" />
+      <ComponentRef Id="Cmp_VectorLib_pdb" />
+      <ComponentRef Id="Cmp_VoronoiLib_dll" />
+      <ComponentRef Id="Cmp_VoronoiLib_pdb" />
+    </ComponentGroup>
+  </Fragment>
+</Wix>
+

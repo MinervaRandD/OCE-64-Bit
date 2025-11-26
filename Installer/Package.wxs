@@ -1,0 +1,37 @@
+<!-- Package.wxs -->
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package
+    Name="OCE Floor Materials Estimator"
+    Manufacturer="Minerva Research and Development, LLC"
+    Version="1.0.0.0"
+    UpgradeCode="PUT-YOUR-OWN-GUID-HERE"
+    >
+
+    <!-- Single embedded CAB -->
+    <MediaTemplate EmbedCab="yes" />
+
+    <!-- Basic major upgrade behavior -->
+    <MajorUpgrade
+      DowngradeErrorMessage="A newer version of OCE Floor Materials Estimator is already installed."
+    />
+
+    <!-- Install directories & Start Menu defined in Folders.wxs -->
+    <Feature Id="MainFeature"
+             Title="OCE Floor Materials Estimator"
+             Level="1">
+      <ComponentGroupRef Id="OCEFME_Components" />
+      <ComponentRef Id="OCEFME_Shortcuts" />
+    </Feature>
+
+    <!-- Launch condition using variables set in Requirements.wxs -->
+    <!-- You WILL want to test/adjust these after checking registry paths on a target machine. -->
+    <Condition Message="OCE Floor Materials Estimator requires 64-bit Microsoft Office 365 and 64-bit Microsoft Visio to be installed.">
+      <![CDATA[
+        OfficeBitness = "x64"
+        AND VisioBitness = "x64"
+        AND OfficeC2RVersion <> ""
+      ]]>
+    </Condition>
+
+  </Package>
+</Wix>

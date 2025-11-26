@@ -306,7 +306,6 @@ namespace FloorMaterialEstimator
             this.tlsProjectPath = new System.Windows.Forms.ToolStripStatusLabel();
             this.tlsSystemInfoFiller4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tlsImageName = new System.Windows.Forms.ToolStripStatusLabel();
-            this.axDrawingControl1 = new AxMicrosoft.Office.Interop.VisOcx.AxDrawingControl();
             this.musBaseMenuStrip.SuspendLayout();
             this.tlsMainToolStrip.SuspendLayout();
             this.tbcPageAreaLine.SuspendLayout();
@@ -341,7 +340,6 @@ namespace FloorMaterialEstimator
             this.grbViewSelection.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAreaPaletteState)).BeginInit();
             this.sssSystemInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axDrawingControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // musBaseMenuStrip
@@ -3036,20 +3034,11 @@ namespace FloorMaterialEstimator
             this.tlsImageName.Size = new System.Drawing.Size(84, 21);
             this.tlsImageName.Text = "tlsImageName";
             // 
-            // axDrawingControl1
-            // 
-            this.axDrawingControl1.Enabled = true;
-            this.axDrawingControl1.Location = new System.Drawing.Point(290, 124);
-            this.axDrawingControl1.Name = "axDrawingControl1";
-            this.axDrawingControl1.Size = new System.Drawing.Size(480, 288);
-            this.axDrawingControl1.TabIndex = 16;
-            // 
             // FloorMaterialEstimatorBaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1061);
-            this.Controls.Add(this.axDrawingControl1);
             this.Controls.Add(this.sssSystemInfo);
             this.Controls.Add(this.txbMaterialStats);
             this.Controls.Add(this.lblRollOutLength);
@@ -3123,7 +3112,6 @@ namespace FloorMaterialEstimator
             ((System.ComponentModel.ISupportInitialize)(this.pbxAreaPaletteState)).EndInit();
             this.sssSystemInfo.ResumeLayout(false);
             this.sssSystemInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axDrawingControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3392,7 +3380,6 @@ namespace FloorMaterialEstimator
         public System.Windows.Forms.Label lblFixedWidthJump;
         private System.Windows.Forms.ToolStripButton btnRotate;
         public System.Windows.Forms.CheckBox ckbShowSeamModeAreaNmbrs;
-        private AxMicrosoft.Office.Interop.VisOcx.AxDrawingControl axDrawingControl1;
     }
 }
 
